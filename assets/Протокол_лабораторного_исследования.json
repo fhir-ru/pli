@@ -1,0 +1,2571 @@
+{
+    "resourceType": "Bundle",
+    "id": "7854321",
+    "language": "ru-RU",
+    "identifier": [
+        {
+            "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.8312.100.1.1.51",
+            "value": "7854321",
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "urn:CodeSystem:ru-identifier-type",
+                        "code": "DOC_ID",
+                        "display": "Уникальный идентификатор документа в МИС"
+                    }
+                ]
+            }
+        },
+        {
+            "system": "urn:oid:1.2.643.5.1.13.13.99.2.267",
+            "value": "1.2.643.5.1.13.2.7.5.1.7.3",
+            "type": {
+                "coding": [
+                    {
+                        "system": "urn:CodeSystem:ru-identifier-type",
+                        "code": "TEMPLATE_ID",
+                        "display": "Уникальный идентификатор Шаблона документа"
+                    }
+                ]
+            }
+        },
+        {
+            "system": "urn:oid:1.2.643.5.1.13.13.11.1522",
+            "value": "Протокол лабораторного исследования",
+            "type": {
+                "coding": [
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.11.1522",
+                        "code": "7",
+                        "display": "Протокол лабораторного исследования"
+                    }
+                ]
+            }
+        }
+    ],
+    "meta": {"lastUpdated": "2021-12-20T19:00:00+03:00"},
+    "type": "collection",
+    "signature": [
+        {
+            "type": [
+                {
+                    "coding": [
+                        {
+                            "system": "urn:iso-astm:E1762-95:2013",
+                            "value": "1.2.840.10065.1.12.1.1"
+                        }
+                    ]
+                }
+            ],
+            "when": "2021-12-20T16:45:00+03:00",
+            "who": {"reference": "Practitioner/authenticator"}
+        },
+        {
+            "type": [
+                {
+                    "coding": [
+                        {
+                            "system": "urn:iso-astm:E1762-95:2013",
+                            "value": "1.2.840.10065.1.12.1.1"
+                        }
+                    ]
+                }
+            ],
+            "when": "2021-12-20T16:10:00+03:00",
+            "who": {"reference": "Practitioner/author"}
+        }
+    ],
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "735486",
+                "text": {
+                    "status": "generated",
+                    "div": "<table class=\"outer\" width=\"100%\"><col width=\"40%\"/><col width=\"60%\"/><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Пациент:<\/th><td class=\"outer\"><b>Новосельцева Ирина <\/b><\/td><\/tr><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Идентификаторы пациента:<\/th><td class=\"outer\"><strong>СНИЛС <\/strong>25463625426<br/><strong>Полис ОМС: <\/strong><br/><strong>(Серия) <\/strong>ЧБ <strong>(Номер) <\/strong>1344600 (ООО \"СК \"ИНГОССТРАХ-М\")<\/td><\/tr><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Документ, удостоверяющий личность<\/th><td class=\"outer\" width=\"20%\"><strong>Паспорт гражданина РФ<\/strong><br/>Серия документа: 4509<br/>Номер документа: 395643<br/>Кем выдан документ: ОВД \"Твардовское\" ОУФМС России по гор. Москве<br/>Код подразделения: 770-095<br/>Дата выдачи: 18.02.2005<\/td><\/tr><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Пол:<\/th><td class=\"outer\">Женский<\/td><\/tr><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Дата рождения (Возраст):<\/th><td class=\"outer\">15.09.1984 (34 лет)<\/td><\/tr><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Контактная информация:<\/th><td class=\"outer\"><strong>Адрес постоянной регистрации: <\/strong><br/> Адрес тесктом<br/><strong>Адрес фактического проживания: <\/strong><br/> Адрес тесктом<br/><br/><strong>Контакты:<\/strong><br/> Тел.: +79050000000; Электронная почта:  novosel.m.v@mail.ru;<br/><\/td><\/tr><\/table><br/>"
+                },
+                "address": [
+                    {
+                        "line": ["Адрес тесктом"],
+                        "postalCode": "000000",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                "valueCoding": [
+                                    {
+                                        "system": "urn:data-instance-id",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.11.1504",
+                                        "code": "1",
+                                        "display": "Адрес по месту жительства (постоянной регистрации)",
+                                        "version": "1.3"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                "valueCoding": [
+                                    {
+                                        "system": "urn:data-instance-id",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "line": ["Адрес тесктом"],
+                        "postalCode": "000000",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                "valueCoding": [
+                                    {
+                                        "system": "urn:data-instance-id",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.11.1504",
+                                        "code": "3",
+                                        "display": "Адрес фактического проживания (пребывания)",
+                                        "version": "1.3"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                "valueCoding": [
+                                    {
+                                        "system": "urn:data-instance-id",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075.100.1.1.10",
+                        "value": "735486",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "MIS_ID",
+                                    "display": "Уникальный идентификатор пациента в МИС"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "system": "urn:oid:1.2.643.100.3",
+                        "value": "25463625426",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "SNILS",
+                                    "display": "СНИЛС"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Новосельцева Юрьевна",
+                        "given": ["Ирина"]
+                    }
+                ],
+                "gender": "female",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+79050000000",
+                        "use": "mobile"
+                    },
+                    {
+                        "system": "email",
+                        "value": "novosel.m.v@mail.ru"
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                        "valueCoding": [
+                            {
+                                "system": "urn:data-instance-id",
+                                "value": "urn:oid:1.2.643.5.1.13.13.11.1040",
+                                "code": "2",
+                                "display": "Женский",
+                                "version": "2.1"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "IdentityCard",
+                        "extension": [
+                            {
+                                "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                "valueCoding": [
+                                    {
+                                        "system": "IdentityCardType",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.48",
+                                        "code": "1",
+                                        "display": "Паспорт гражданина РФ",
+                                        "version": "4.2"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "Series",
+                                "valueString": "4509"
+                            },
+                            {
+                                "url": "Number",
+                                "valueString": "395643"
+                            },
+                            {
+                                "url": "IssueOrgName",
+                                "valueString": "ОВД \"Твардовское\" ОУФМС России по гор. Москве"
+                            },
+                            {
+                                "url": "IssueOrgCode",
+                                "valueString": "770-095"
+                            },
+                            {
+                                "url": "IssueOrgCode",
+                                "valueDate": "2005-02-18"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "InsurancePolicy",
+                        "extension": [
+                            {
+                                "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                "valueCoding": [
+                                    {
+                                        "system": "InsurancePolicyType",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.11.1035",
+                                        "code": "1",
+                                        "display": "Полис ОМС старого образца",
+                                        "version": "1.3"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "urn:Series",
+                                "valueString": "ЧБ"
+                            },
+                            {
+                                "url": "urn:Number",
+                                "valueString": "1344600"
+                            }
+                        ]
+                    }
+                ],
+                "birthDate": "1984-09-15",
+                "managingOrganization": {
+                    "identifier": [
+                        {
+                            "system": "urn:CodeSystem:oid:Organization",
+                            "value": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075",
+                            "use": "official"
+                        }
+                    ],
+                    "display": "ООО «Ваше Здоровье»",
+                    "reference": "#custodian"
+                }
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "4455",
+                "text": {
+                    "status": "generated",
+                    "div": "<h2>Протокол лабораторного исследования от 20 Декабря  2021<\/h2><br/><table class=\"outer\" width=\"100%\"><col width=\"40%\"/><col width=\"60%\"/><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Случай оказания медицинской помощи:<\/th><td class=\"outer\"><strong>Дата начала:  <\/strong>20.12.2021<br/><strong>Дата окончания:  <\/strong>20.12.2021<br/><\/td><\/tr><\/table><br/>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075.100.1.1.15",
+                        "value": "5469-16"
+                    },
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075.100.1.1.17",
+                        "value": "5316-16"
+                    },
+                    {
+                        "system": "1.2.643.5.1.13.13.99.2.723",
+                        "value": "1",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:encounterCardCode",
+                                    "code": "AMB",
+                                    "display": "Амбулаторная медицинская карта"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "class": {
+                    "system": "1.2.643.5.1.13.13.11.1522",
+                    "code": "41",
+                    "display": "Медицинская карта пациента, получающего медицинскую помощь в амбулаторных условиях"
+                },
+                "period": {
+                    "start": "2021-12-20T08:30:00+03:00",
+                    "end": "2021-12-20T19:00:00+03:00"
+                },
+                "subject": {"reference": "Patient/735486"},
+                "status": "finished"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "542177",
+                "practitioner": {
+                    "reference": "Practitioner/author",
+                    "display": "Смирнова Александра"
+                },
+                "organization": {
+                    "reference": "Organization/custodian",
+                    "display": "ООО «Ваше Здоровье»"
+                },
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:1.2.643.5.1.13.13.11.1002",
+                                "code": "35",
+                                "display": "Врач клинической лабораторной диагностики",
+                                "version": "6.4"
+                            }
+                        ],
+                        "text": "specialization"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "183640",
+                "practitioner": {
+                    "reference": "Practitioner/Requester",
+                    "display": "Поляков Александр"
+                },
+                "organization": {
+                    "reference": "Organization/scopingOrganization",
+                    "display": "ГБУЗ \"Городская поликлиника № 25 Департамента здравоохранения города Москвы\""
+                },
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:1.2.643.5.1.13.13.11.1002",
+                                "code": "109",
+                                "display": "врач-терапевт",
+                                "version": "6.4"
+                            }
+                        ],
+                        "text": "specialization"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "542323",
+                "practitioner": {
+                    "reference": "Practitioner/labjunior",
+                    "display": "Добролюбова Валентина"
+                },
+                "organization": {
+                    "reference": "Organization/custodian",
+                    "display": "ООО «Ваше Здоровье»"
+                },
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:1.2.643.5.1.13.13.11.1002",
+                                "code": "177",
+                                "display": "медицинский лабораторный техник (фельдшер-лаборант)",
+                                "version": "6.4"
+                            }
+                        ],
+                        "text": "specialization"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "512174",
+                "practitioner": {
+                    "reference": "Practitioner/authenticator",
+                    "display": "Иванов Александр"
+                },
+                "organization": {
+                    "reference": "Organization/custodian",
+                    "display": "ООО «Ваше Здоровье»"
+                },
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:1.2.643.5.1.13.13.11.1002",
+                                "code": "431",
+                                "display": "заведующий лабораторией медицинской организации",
+                                "version": "6.4"
+                            }
+                        ],
+                        "text": "specialization"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "542170",
+                "practitioner": {
+                    "reference": "Practitioner/collector",
+                    "display": "Войнова Ольга"
+                },
+                "organization": {
+                    "reference": "Organization/custodian",
+                    "display": "ООО «Ваше Здоровье»"
+                },
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:1.2.643.5.1.13.13.11.1002",
+                                "code": "171",
+                                "display": "медицинская сестра процедурной",
+                                "version": "6.4"
+                            }
+                        ],
+                        "text": "specialization"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "author",
+                "name": [
+                    {
+                        "family": "Смирнова",
+                        "given": ["Александра"],
+                        "use": "official"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075.100.1.1.70",
+                        "value": "542177",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "PRACTITIONER_MIS_ID",
+                                    "display": "Уникальный идентификатор мед. работника в МИС"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "system": "urn:oid:1.2.643.100.3",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "nullFlavor",
+                                    "code": "OTH",
+                                    "display": "отсутствует"
+                                }
+                            ],
+                            "text": "СНИЛС отсутствует"
+                        }
+                    }
+                ],
+                "address": [
+                    {
+                        "line": ["Адрес тесктом1"],
+                        "postalCode": "000000",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "state",
+                                "valueCoding": [
+                                    {
+                                        "system": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+79050000000",
+                        "use": "mobile"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "labjunior",
+                "name": [
+                    {
+                        "family": "Добролюбова",
+                        "given": ["Валентина"],
+                        "use": "official"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075.100.1.1.70",
+                        "value": "542323"
+                    },
+                    {
+                        "system": "urn:oid:1.2.643.100.3",
+                        "value": "52415377312",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "SNILS",
+                                    "display": "СНИЛС"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "address": [
+                    {
+                        "line": ["Адрес тесктом1"],
+                        "postalCode": "000000",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "state",
+                                "valueCoding": [
+                                    {
+                                        "system": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "authenticator",
+                "name": [
+                    {
+                        "family": "Иванов",
+                        "given": ["Александр"],
+                        "use": "official"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075.100.1.1.70",
+                        "value": "512174",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "PRACTITIONER_MIS_ID",
+                                    "display": "Уникальный идентификатор мед. работника в МИС"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "system": "urn:oid:1.2.643.100.3",
+                        "value": "52415372312",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "SNILS",
+                                    "display": "СНИЛС"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "address": [
+                    {
+                        "line": ["Адрес тесктом1"],
+                        "postalCode": "000000",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "state",
+                                "valueCoding": [
+                                    {
+                                        "system": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+79050000002",
+                        "use": "mobile"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "collector",
+                "name": [
+                    {
+                        "family": "Войнова",
+                        "given": ["Ольга"],
+                        "use": "official"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075.100.1.1.70",
+                        "value": "542170",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "PRACTITIONER_MIS_ID",
+                                    "display": "Уникальный идентификатор мед. работника в МИС"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "system": "urn:oid:1.2.643.100.3",
+                        "value": "10003000607",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "SNILS",
+                                    "display": "СНИЛС"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "address": [
+                    {
+                        "line": ["Адрес тесктом1"],
+                        "postalCode": "000000",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "state",
+                                "valueCoding": [
+                                    {
+                                        "system": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+79050000001",
+                        "use": "mobile"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "Requester",
+                "name": [
+                    {
+                        "family": "Поляков",
+                        "given": ["Александр"],
+                        "use": "official"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075.100.1.1.70",
+                        "value": "183640"
+                    },
+                    {
+                        "system": "urn:oid:1.2.643.100.3",
+                        "value": "15679879686",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "SNILS",
+                                    "display": "СНИЛС"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "address": [
+                    {
+                        "line": ["Московская область, Россия, г. Москва, ул. Миклухо-Маклая, д. 10"],
+                        "postalCode": "117198",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:1dec06af-f015-425b-be4b-253fab5d7ccb"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:b1adc7d0-8160-47d0-9903-d794b72078f6"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "state",
+                                "valueCoding": [
+                                    {
+                                        "system": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+79065184597",
+                        "use": "mobile"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "CareTeam",
+                "id": "medservice",
+                "text": {
+                    "status": "generated",
+                    "div": "<table class=\"outer\" width=\"100%\"><col width=\"40%\"/><col width=\"60%\"/><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Исполнители:<\/th><td class=\"outer\">Смирнова Александра , врач клинической лабораторной диагностики<br/>Добролюбова Валентина , медицинский лабораторный техник (фельдшер-лаборант)<br/><\/td><\/tr><\/table><br/>"
+                },
+                "subject": {"reference": "Patient/735486"},
+                "period": [
+                    {
+                        "start": "2021-12-20T08:30:00+03:00",
+                        "end": "2021-12-20T16:10:00+03:00"
+                    }
+                ],
+                "participant": [
+                    {
+                        "member": {"reference": "Practitioner/author"}
+                    },
+                    {
+                        "member": {"reference": "Practitioner/labjunior"}
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "CareTeam",
+                "id": "signatures",
+                "text": {
+                    "status": "generated",
+                    "div": "<table class=\"outer\" width=\"100%\"><col width=\"40%\"/><col width=\"60%\"/><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Документ составил:<\/th><td class=\"outer\">Врач клинической лабораторной диагностики Смирнова Александра <\/td><\/tr><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Документ заверил:<\/th><td class=\"outer\">заведующий лабораторией медицинской организации Иванов Александр <\/td><\/tr><\/table>"
+                },
+                "subject": {"reference": "Patient/735486"},
+                "period": [
+                    {
+                        "start": "2021-12-20T16:10:00+03:00",
+                        "end": "2021-12-20T16:45:00+03:00"
+                    }
+                ],
+                "participant": [
+                    {
+                        "member": {"reference": "Practitioner/author"}
+                    },
+                    {
+                        "member": {"reference": "Practitioner/authenticator"}
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Coverage",
+                "id": "InsurancePolicy",
+                "status": "active",
+                "extension": [
+                    {
+                        "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                        "valueCoding": [
+                            {
+                                "system": "urn:data-instance-id",
+                                "value": "urn:oid:1.2.643.5.1.13.13.11.1039",
+                                "code": "1",
+                                "display": "ОМС",
+                                "version": "2.1"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                        "valueCoding": [
+                            {
+                                "system": "urn:data-instance-id",
+                                "value": "urn:oid:1.2.643.5.1.13.13.99.2.724",
+                                "code": "1",
+                                "display": "Полис ОМС",
+                                "version": "1.1"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "https://nsi.rosminzdrav.ru/#!/refbook",
+                        "valueCoding": [
+                            {
+                                "system": "urn:data-instance-id",
+                                "value": "urn:oid:1.2.643.5.1.13.13.11.1035",
+                                "code": "1",
+                                "display": "Полис ОМС старого образца",
+                                "version": "1.3"
+                            }
+                        ]
+                    },
+                    {
+                        "url": "urn:Series",
+                        "valueString": "ЧБ"
+                    },
+                    {
+                        "url": "urn:INN",
+                        "valueString": "213546789"
+                    }
+                ],
+                "period": {
+                    "start": "2015-06-03",
+                    "end": "2025-06-03"
+                },
+                "beneficiary": {"reference": "Patient/735486"},
+                "policyHolder": {"reference": "Patient/735486"},
+                "dependent": "1344600",
+                "payor": [
+                    {"reference": "Organization/Insurance"}
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "informationRecipient",
+                "identifier": [
+                    {
+                        "system": "urn:CodeSystem:oid:Organization",
+                        "value": "urn:oid:1.2.643.5.1.13",
+                        "use": "official"
+                    }
+                ],
+                "name": "Министерство здравоохранения Российской Федерации"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "Insurance",
+                "identifier": [
+                    {
+                        "system": "urn:CodeSystem:oid:1.2.643.5.1.13.13.99.2.183",
+                        "value": "77013",
+                        "use": "official"
+                    }
+                ],
+                "name": "ООО \"СК \"ИНГОССТРАХ-М\"",
+                "address": [
+                    {
+                        "line": ["Россия, г. Москва, ул. Рочдельская, д. 15, стр. 35"],
+                        "postalCode": "123376",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:6bfbfcbb-87a7-4674-a8e5-bf5f1bbfbf92"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:0b33a0e1-3427-409a-a3b7-e57716819f38"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "state",
+                                "valueCoding": [
+                                    {
+                                        "system": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "contact": [
+                    {
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "+74957295571",
+                                "use": "work"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "custodian",
+                "identifier": [
+                    {
+                        "system": "urn:CodeSystem:oid:Organization",
+                        "value": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075",
+                        "use": "official"
+                    }
+                ],
+                "name": "ООО «Ваше Здоровье»",
+                "address": [
+                    {
+                        "line": ["Адрес тесктом1"],
+                        "postalCode": "000000",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:316c42e9-3bb0-4b2f-a483-d0d3d9a9ff07"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "state",
+                                "valueCoding": [
+                                    {
+                                        "system": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "contact": [
+                    {
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "+74950000000",
+                                "use": "work"
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "Props",
+                        "extension": [
+                            {
+                                "url": "Ogrn",
+                                "valueString": "1087746603394"
+                            },
+                            {
+                                "url": "Okato",
+                                "valueString": "45"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Organization",
+                "id": "scopingOrganization",
+                "text": {
+                    "status": "generated",
+                    "div": "<table class=\"outer\" width=\"100%\"><col width=\"40%\"/><col width=\"60%\"/><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Медицинская организация:<\/th><td class=\"outer\">ООО «Ваше Здоровье»<br/>Адрес: Адрес тесктом1<br/>Контакты: Тел.(раб.): +74950000000;<br/><\/td><\/tr><\/table><hr/><br/><br/>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:CodeSystem:oid:Organization",
+                        "value": "urn:oid:1.2.643.5.1.13.13.12.2.77.7809",
+                        "use": "official"
+                    }
+                ],
+                "name": "ГБУЗ \"Городская поликлиника № 25 Департамента здравоохранения города Москвы\"",
+                "address": [
+                    {
+                        "line": ["Московская область, Россия, г. Москва, ул. Миклухо-Маклая, д. 10"],
+                        "postalCode": "117198",
+                        "extension": [
+                            {
+                                "url": "https://fias.nalog.ru",
+                                "extension": [
+                                    {
+                                        "url": "AOGUID",
+                                        "valueUuid": "urn:uuid:1dec06af-f015-425b-be4b-253fab5d7ccb"
+                                    },
+                                    {
+                                        "url": "HOUSEGUID",
+                                        "valueUuid": "urn:uuid:b1adc7d0-8160-47d0-9903-d794b72078f6"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "state",
+                                "valueCoding": [
+                                    {
+                                        "system": "https://nsi.rosminzdrav.ru/#!/refbook",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.206",
+                                        "code": "77",
+                                        "display": "г. Москва",
+                                        "version": "6.2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "contact": [
+                    {
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "+74957796609",
+                                "use": "work"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ServiceRequest",
+                "id": "LabTestOAK",
+                "text": {
+                    "status": "generated",
+                    "div": "<table class=\"outer\" width=\"100%\"><col width=\"40%\"/><col width=\"60%\"/><tr class=\"outer\"><th class=\"outer\" width=\"20%\">Направление:<\/th><td class=\"outer\"><strong>Врач: <\/strong><br/>Поляков Александр Игоревич, врач-терапевт<br/><br/><strong>Медицинская организация: <\/strong>ГБУЗ \"Городская поликлиника № 25 Департамента здравоохранения города Москвы\"<br/>Адрес:  Московская область, Россия, г. Москва, ул. Миклухо-Маклая, д. 10, 117198<br/><\/td><\/tr><\/table><br/>"
+                },
+                "identifier": [
+                    {
+                        "system": "urn:oid:1.2.643.5.1.13.13.12.2.77.7809.100.1.1.51",
+                        "value": "987964",
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "urn:CodeSystem:ru-identifier-type",
+                                    "code": "DOC_ID",
+                                    "display": "Уникальный идентификатор документа в МИС"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "system": "1.2.643.5.1.13.13.11.1522",
+                        "value": "107",
+                        "use": "official",
+                        "type": {"text": "Направление на лабораторное исследование"}
+                    }
+                ],
+                "status": "completed",
+                "intent": "order",
+                "orderDetail": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.11.1476",
+                                "code": "10023",
+                                "display": "Общий анализ крови (сокращенный)",
+                                "version": "4.71"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "requester": {"reference": "Practitioner/Requester"},
+                "performer": [
+                    {"reference": "Practitioner/author"}
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "EpisodeOfCare",
+                "id": "event",
+                "status": "active",
+                "patient": {"reference": "Patient/735486"},
+                "managingOrganization": {
+                    "identifier": [
+                        {
+                            "system": "urn:CodeSystem:oid:Organization",
+                            "value": "urn:oid:1.2.643.5.1.13.13.12.2.77.16075",
+                            "use": "official"
+                        }
+                    ],
+                    "display": "ООО «Ваше Здоровье»",
+                    "reference": "#custodian"
+                },
+                "careManager": [
+                    {"reference": "Practitioner/author"}
+                ],
+                "period": [
+                    {
+                        "start": "2021-12-20T08:30:00+03:00",
+                        "end": "2021-12-20T16:10:00+03:00"
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "medService",
+                        "valueCoding": [
+                            {
+                                "system": "urn:data-instance-id",
+                                "value": "urn:oid:1.2.643.5.1.13.13.99.2.726",
+                                "code": "4",
+                                "display": "Лабораторное исследование",
+                                "version": "1.1"
+                            }
+                        ],
+                        "extension": [
+                            {
+                                "url": "serviceForm",
+                                "valueCoding": [
+                                    {
+                                        "system": "urn:data-instance-id",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.11.1551",
+                                        "code": "1",
+                                        "display": "плановая",
+                                        "version": "1.1"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "serviceType",
+                                "valueCoding": [
+                                    {
+                                        "system": "urn:data-instance-id",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.11.1034",
+                                        "code": "4",
+                                        "display": "Первичная врачебная медико-санитарная помощь",
+                                        "version": "1.1"
+                                    }
+                                ]
+                            },
+                            {
+                                "url": "serviceCond",
+                                "valueCoding": [
+                                    {
+                                        "system": "urn:data-instance-id",
+                                        "value": "urn:oid:1.2.643.5.1.13.13.99.2.322",
+                                        "code": "4",
+                                        "display": "Амбулаторно",
+                                        "version": "1.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "team": [
+                    {"reference": "CareTeam/medservice"}
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Device",
+                "id": "DEV",
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.67",
+                        "value": "1234"
+                    }
+                ],
+                "manufacturer": "Sysmex",
+                "serialNumber": "98043765810874859861043876513",
+                "deviceName": [
+                    {
+                        "name": "KX21",
+                        "type": "model-name"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Device",
+                "id": "CSM",
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.67",
+                        "value": "9874"
+                    }
+                ],
+                "manufacturer": "HEMOS SP",
+                "serialNumber": "98043765810874859861043876513",
+                "deviceName": [
+                    {
+                        "name": "Гелевые карты",
+                        "type": "model-name"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Specimen",
+                "id": "spec1",
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567890"
+                    }
+                ],
+                "type": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1081",
+                            "code": "108"
+                        }
+                    ],
+                    "text": "Кровь венозная"
+                },
+                "collection": {
+                    "collector": {"reference": "Practitioner/collector"},
+                    "collectedDateTime": "2021-12-20T07:00:05+03:00"
+                },
+                "container": [
+                    {
+                        "identifier": [
+                            {
+                                "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                                "value": "1234567890"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "Hb",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<table class=\"Sections\"><tbody><tr><td colspan=\"2\"><br/><\/td><\/tr><tr><td class=\"SectionTitle\" colspan=\"2\"><span style=\"font-weight:bold;\" title=\"SPECIMENS\">Информация об исследованных материалах<\/span><\/td><\/tr><tr><td colspan=\"2\"><br/><\/td><\/tr><tr><td class=\"SubSectionTitle\"/><td class=\"Rest\">Кровь венозная (5 мл) в пластиковой пробирке с К3-ЭДТА, маркированной штрихкодом 1234567890, полученная из ООО «Ваше Здоровье.<\/td><\/tr><tr><td colspan=\"2\"><br/><\/td><\/tr><tr><td class=\"SectionTitle\" colspan=\"2\"><span style=\"font-weight:bold;\" title=\"ANALYSERS\">Оборудование и расходные материалы<\/span><\/td><\/tr><tr><td colspan=\"2\"><br/><\/td><\/tr><tr><td class=\"SubSectionTitle\"/><td class=\"Rest\">Гематологический анализатор Sysmex KX21<br/><br/>Гелевые карты HEMOS SP<\/td><\/tr><tr><td colspan=\"2\"><br/><\/td><\/tr><tr><td class=\"SectionTitle\" colspan=\"2\"><span style=\"font-weight:bold;\" title=\"RESLAB\">Результаты исследования<\/span><\/td><\/tr><tr><td colspan=\"2\"><br/><\/td><\/tr><tr><td class=\"SubSectionTitle\"/><td class=\"Rest\"><table class=\"inner\" width=\"100%\"><col width=\"12%\"/><col width=\"13%\"/><col width=\"8%\"/><col width=\"12%\"/><col width=\"14%\"/><col width=\"12%\"/><col width=\"8%\"/><col  width=\"17%\"/><thead><tr><th class=\"inner\">Показатель<\/th><th class=\"inner\">Значение<\/th><th class=\"inner\">Единицы измерения<\/th><th class=\"inner\">Референтный диапазон<\/th><th class=\"inner\">Комментарий<\/th><th class=\"inner\">Оборудование<\/th><th class=\"inner\">Дата<\/th><th class=\"inner\">Исполнитель<\/th><\/tr><\/thead><tbody><tr><td class=\"inner\" colspan=\"8\"><b>Анализ крови на анализаторе<\/b><\/td><\/tr><tr><td class=\"inner\" colspan=\"\">Гемоглобин<\/td><td class=\"inner\" colspan=\"\">155<\/td><td class=\"inner\" colspan=\"\">г/л<\/td><td class=\"inner\" colspan=\"\">120 - 150<\/td><td class=\"inner\" colspan=\"\"/><td class=\"inner\" colspan=\"\">Sysmex KX21<\/td><td class=\"inner\" colspan=\"\">20.12.2021 08:55<\/td><td class=\"inner\" colspan=\"\">лаборант Добролюбова В.Н.,<br/>врач КЛД Смирнова И.А.<\/td><\/tr><tr><td class=\"inner\" colspan=\"6\"><i>Примечание к результату исследования: -<\/i><\/td><td class=\"inner\" colspan=\"\">20.12.2021 10:42<\/td><td class=\"inner\" colspan=\"\">врач КЛД Смирнова И.А.<\/td><\/tr>"
+                },
+                "basedOn": [
+                    {"reference": "ServiceRequest/LabTestOAK"}
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1080",
+                            "code": "1017128",
+                            "display": "Гемоглобин общий, массовая концентрация в крови",
+                            "version": "3.27"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567890"
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:32+03:00",
+                "issued": "2021-12-20T08:55:32+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "valueQuantity": {
+                    "value": 155,
+                    "unit": "г/л",
+                    "system": "1.2.643.5.1.13.13.11.1358",
+                    "code": "60",
+                    "extension": [
+                        {
+                            "url": "dic:version",
+                            "valueString": "3.2"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1080",
+                                        "code": "1017128",
+                                        "display": "Гемоглобин общий, массовая концентрация в крови",
+                                        "version": "3.27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.99.2.257",
+                                "code": "H",
+                                "display": "Повышенный",
+                                "version": "1.1"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {"reference": "specimen/spec1"},
+                "device": {"reference": "Device/DEV"},
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 120,
+                            "unit": "г/л"
+                        },
+                        "high": {
+                            "value": 150,
+                            "unit": "г/л"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "1.2.643.5.1.13.13.99.2.257",
+                                    "code": "N",
+                                    "display": "нормальный",
+                                    "version": "1.1"
+                                }
+                            ]
+                        },
+                        "appliesTo": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1040",
+                                        "code": "2",
+                                        "display": "Женский",
+                                        "version": "2.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "authorReference": {"reference": "Practitioner/author"},
+                        "time": "2021-12-20T10:42:30+03:00",
+                        "text": "Примечание к результату исследования: -"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "RBC",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<tr><td class=\"inner\" colspan=\"8\"><b>Анализ крови на анализаторе<\/b><\/td><\/tr><tr><td class=\"inner\" colspan=\"\">Эритроциты<\/td><td class=\"inner\" colspan=\"\">5<\/td><td class=\"inner\" colspan=\"\">10^12/л<\/td><td class=\"inner\" colspan=\"\">3.8 - 5.1<\/td><td class=\"inner\" colspan=\"\"/><td class=\"inner\" colspan=\"\">Sysmex KX21<\/td><td class=\"inner\" colspan=\"\">20.12.2021 08:55<\/td><td class=\"inner\" colspan=\"\">лаборант Добролюбова В.Н.,<br/>врач КЛД Смирнова И.А.<\/td><\/tr><tr><td class=\"inner\" colspan=\"6\"><i>Примечание к результату исследования: -<\/i><\/td><td class=\"inner\" colspan=\"\">20.12.2021 10:42<\/td><td class=\"inner\" colspan=\"\">врач КЛД Смирнова И.А.<\/td><\/tr>"
+                },
+                "basedOn": [
+                    {"reference": "ServiceRequest/LabTestOAK"}
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1080",
+                            "code": "1017375",
+                            "display": "Эритроциты, количество в крови методом автоматизированного подсчёта",
+                            "version": "3.27"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567891"
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:38+03:00",
+                "issued": "2021-12-20T08:55:38+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "valueQuantity": {
+                    "value": 5,
+                    "unit": "10^12/л",
+                    "system": "1.2.643.5.1.13.13.11.1358",
+                    "code": "328",
+                    "extension": [
+                        {
+                            "url": "dic:version",
+                            "valueString": "3.2"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1080",
+                                        "code": "1017375",
+                                        "display": "Эритроциты, количество в крови методом автоматизированного подсчёта",
+                                        "version": "3.27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.99.2.257",
+                                "code": "N",
+                                "display": "нормальный",
+                                "version": "1.1"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {"reference": "specimen/spec1"},
+                "device": {"reference": "Device/DEV"},
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 3.8,
+                            "unit": "10^12/л"
+                        },
+                        "high": {
+                            "value": 5.1,
+                            "unit": "10^12/л"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "1.2.643.5.1.13.13.99.2.257",
+                                    "code": "N",
+                                    "display": "нормальный",
+                                    "version": "1.1"
+                                }
+                            ]
+                        },
+                        "appliesTo": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1040",
+                                        "code": "2",
+                                        "display": "Женский",
+                                        "version": "2.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "authorReference": {"reference": "Practitioner/author"},
+                        "time": "2021-12-20T10:42:35+03:00",
+                        "text": "Примечание к результату исследования: -"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "MCH",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<tr><td class=\"inner\" colspan=\"8\"><b>Анализ крови на анализаторе<\/b><\/td><\/tr><tr><td class=\"inner\" colspan=\"\">Среднее содержание гемоглобина в эритроците в крови методом автоматизированного подсчёта<\/td><td class=\"inner\" colspan=\"\">31<\/td><td class=\"inner\" colspan=\"\">пг<\/td><td class=\"inner\" colspan=\"\">27 - 31<\/td><td class=\"inner\" colspan=\"\"/><td class=\"inner\" colspan=\"\">Sysmex KX21<\/td><td class=\"inner\" colspan=\"\">20.12.2021 08:55<\/td><td class=\"inner\" colspan=\"\">лаборант Добролюбова В.Н.,<br/>врач КЛД Смирнова И.А.<\/td><\/tr><tr><td class=\"inner\" colspan=\"6\"><i>Примечание к результату исследования: -<\/i><\/td><td class=\"inner\" colspan=\"\">20.12.2021 10:42<\/td><td class=\"inner\" colspan=\"\">врач КЛД Смирнова И.А.<\/td><\/tr>"
+                },
+                "basedOn": [
+                    {"reference": "ServiceRequest/LabTestOAK"}
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1080",
+                            "code": "1017425",
+                            "display": "Среднее содержание гемоглобина в эритроците в крови методом автоматизированного подсчёта",
+                            "version": "3.27"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567891"
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:38+03:00",
+                "issued": "2021-12-20T08:55:38+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "valueQuantity": {
+                    "value": 31,
+                    "unit": "пг",
+                    "system": "1.2.643.5.1.13.13.11.1358",
+                    "code": "13",
+                    "extension": [
+                        {
+                            "url": "dic:version",
+                            "valueString": "3.2"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1080",
+                                        "code": "1017425",
+                                        "display": "Среднее содержание гемоглобина в эритроците в крови методом автоматизированного подсчёта",
+                                        "version": "3.27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.99.2.257",
+                                "code": "N",
+                                "display": "нормальный",
+                                "version": "1.1"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {"reference": "specimen/spec1"},
+                "device": {"reference": "Device/DEV"},
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 27,
+                            "unit": "пг"
+                        },
+                        "high": {
+                            "value": 31,
+                            "unit": "пг"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "1.2.643.5.1.13.13.99.2.257",
+                                    "code": "N",
+                                    "display": "нормальный",
+                                    "version": "1.1"
+                                }
+                            ]
+                        },
+                        "appliesTo": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1040",
+                                        "code": "2",
+                                        "display": "Женский",
+                                        "version": "2.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "authorReference": {"reference": "Practitioner/author"},
+                        "time": "2021-12-20T10:42:35+03:00",
+                        "text": "Примечание к результату исследования: -"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "MCHC",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<tr><td class=\"inner\" colspan=\"8\"><b>Анализ крови на анализаторе<\/b><\/td><\/tr><tr><td class=\"inner\" colspan=\"\">Средняя концентрация гемоглобина в эритроците в крови методом автоматизированного подсчёта<\/td><td class=\"inner\" colspan=\"\">360<\/td><td class=\"inner\" colspan=\"\">г/л<\/td><td class=\"inner\" colspan=\"\">300 - 380<\/td><td class=\"inner\" colspan=\"\"/><td class=\"inner\" colspan=\"\">Sysmex KX21<\/td><td class=\"inner\" colspan=\"\">20.12.2021 08:55<\/td><td class=\"inner\" colspan=\"\">лаборант Добролюбова В.Н.,<br/>врач КЛД Смирнова И.А.<\/td><\/tr><tr><td class=\"inner\" colspan=\"6\"><i>Примечание к результату исследования: -<\/i><\/td><td class=\"inner\" colspan=\"\">20.12.2021 10:42<\/td><td class=\"inner\" colspan=\"\">врач КЛД Смирнова И.А.<\/td><\/tr>"
+                },
+                "basedOn": [
+                    {"reference": "ServiceRequest/LabTestOAK"}
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1080",
+                            "code": "1017433",
+                            "display": "Средняя концентрация гемоглобина в эритроците в крови методом автоматизированного подсчёта",
+                            "version": "3.27"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567891"
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:38+03:00",
+                "issued": "2021-12-20T08:55:38+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "valueQuantity": {
+                    "value": 360,
+                    "unit": "г/л",
+                    "system": "1.2.643.5.1.13.13.11.1358",
+                    "code": "60",
+                    "extension": [
+                        {
+                            "url": "dic:version",
+                            "valueString": "3.2"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1080",
+                                        "code": "1017433",
+                                        "display": "Средняя концентрация гемоглобина в эритроците в крови методом автоматизированного подсчёта",
+                                        "version": "3.27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.99.2.257",
+                                "code": "N",
+                                "display": "нормальный",
+                                "version": "1.1"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {"reference": "specimen/spec1"},
+                "device": {"reference": "Device/DEV"},
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 300,
+                            "unit": "г/л"
+                        },
+                        "high": {
+                            "value": 380,
+                            "unit": "г/л"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "1.2.643.5.1.13.13.99.2.257",
+                                    "code": "N",
+                                    "display": "нормальный",
+                                    "version": "1.1"
+                                }
+                            ]
+                        },
+                        "appliesTo": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1040",
+                                        "code": "2",
+                                        "display": "Женский",
+                                        "version": "2.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "authorReference": {"reference": "Practitioner/author"},
+                        "time": "2021-12-20T10:42:35+03:00",
+                        "text": "Примечание к результату исследования: -"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "MCV",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<tr><td class=\"inner\" colspan=\"8\"><b>Анализ крови на анализаторе<\/b><\/td><\/tr><tr><td class=\"inner\" colspan=\"\">Средний объем эритроцита в крови методом автоматизированного подсчёта<\/td><td class=\"inner\" colspan=\"\">86<\/td><td class=\"inner\" colspan=\"\">фл<\/td><td class=\"inner\" colspan=\"\">80 - 95<\/td><td class=\"inner\" colspan=\"\"/><td class=\"inner\" colspan=\"\">Sysmex KX21<\/td><td class=\"inner\" colspan=\"\">20.12.2021 08:55<\/td><td class=\"inner\" colspan=\"\">лаборант Добролюбова В.Н.,<br/>врач КЛД Смирнова И.А.<\/td><\/tr><tr><td class=\"inner\" colspan=\"6\"><i>Примечание к результату исследования: -<\/i><\/td><td class=\"inner\" colspan=\"\">20.12.2021 10:42<\/td><td class=\"inner\" colspan=\"\">врач КЛД Смирнова И.А.<\/td><\/tr>"
+                },
+                "basedOn": [
+                    {"reference": "ServiceRequest/LabTestOAK"}
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1080",
+                            "code": "1017441",
+                            "display": "Средний объем эритроцита в крови методом автоматизированного подсчёта",
+                            "version": "3.27"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567891"
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:38+03:00",
+                "issued": "2021-12-20T08:55:38+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "valueQuantity": {
+                    "value": 86,
+                    "unit": "фл",
+                    "system": "1.2.643.5.1.13.13.11.1358",
+                    "code": "20",
+                    "extension": [
+                        {
+                            "url": "dic:version",
+                            "valueString": "3.2"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1080",
+                                        "code": "1017441",
+                                        "display": "Средний объем эритроцита в крови методом автоматизированного подсчёта",
+                                        "version": "3.27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.99.2.257",
+                                "code": "N",
+                                "display": "нормальный",
+                                "version": "1.1"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {"reference": "specimen/spec1"},
+                "device": {"reference": "Device/DEV"},
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 80,
+                            "unit": "фл"
+                        },
+                        "high": {
+                            "value": 95,
+                            "unit": "фл"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "1.2.643.5.1.13.13.99.2.257",
+                                    "code": "N",
+                                    "display": "нормальный",
+                                    "version": "1.1"
+                                }
+                            ]
+                        },
+                        "appliesTo": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1040",
+                                        "code": "2",
+                                        "display": "Женский",
+                                        "version": "2.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "authorReference": {"reference": "Practitioner/author"},
+                        "time": "2021-12-20T10:42:35+03:00",
+                        "text": "Примечание к результату исследования: -"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "RDW",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<tr><td class=\"inner\" colspan=\"8\"><b>Анализ крови на анализаторе<\/b><\/td><\/tr><tr><td class=\"inner\" colspan=\"\">Ширина распределения эритроцитов по объему, коэффициент вариации в крови методом автоматизированного подсчёта<\/td><td class=\"inner\" colspan=\"\">12<\/td><td class=\"inner\" colspan=\"\">%<\/td><td class=\"inner\" colspan=\"\">11.5 - 14.5<\/td><td class=\"inner\" colspan=\"\"/><td class=\"inner\" colspan=\"\">Sysmex KX21<\/td><td class=\"inner\" colspan=\"\">20.12.2021 08:55<\/td><td class=\"inner\" colspan=\"\">лаборант Добролюбова В.Н.,<br/>врач КЛД Смирнова И.А.<\/td><\/tr><tr><td class=\"inner\" colspan=\"6\"><i>Примечание к результату исследования: -<\/i><\/td><td class=\"inner\" colspan=\"\">20.12.2021 10:42<\/td><td class=\"inner\" colspan=\"\">врач КЛД Смирнова И.А.<\/td><\/tr>"
+                },
+                "basedOn": [
+                    {"reference": "ServiceRequest/LabTestOAK"}
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1080",
+                            "code": "1017466",
+                            "display": "Ширина распределения эритроцитов по объему, коэффициент вариации в крови методом автоматизированного подсчёта",
+                            "version": "3.27"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567891"
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:38+03:00",
+                "issued": "2021-12-20T08:55:38+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "valueQuantity": {
+                    "value": 12,
+                    "unit": "%",
+                    "system": "1.2.643.5.1.13.13.11.1358",
+                    "code": "53",
+                    "extension": [
+                        {
+                            "url": "dic:version",
+                            "valueString": "3.2"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1080",
+                                        "code": "1017466",
+                                        "display": "Ширина распределения эритроцитов по объему, коэффициент вариации в крови методом автоматизированного подсчёта",
+                                        "version": "3.27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.99.2.257",
+                                "code": "N",
+                                "display": "нормальный",
+                                "version": "1.1"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {"reference": "specimen/spec1"},
+                "device": {"reference": "Device/DEV"},
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 11.5,
+                            "unit": "%"
+                        },
+                        "high": {
+                            "value": 14.5,
+                            "unit": "%"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "1.2.643.5.1.13.13.99.2.257",
+                                    "code": "N",
+                                    "display": "нормальный",
+                                    "version": "1.1"
+                                }
+                            ]
+                        },
+                        "appliesTo": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1040",
+                                        "code": "2",
+                                        "display": "Женский",
+                                        "version": "2.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "authorReference": {"reference": "Practitioner/author"},
+                        "time": "2021-12-20T10:42:35+03:00",
+                        "text": "Примечание к результату исследования: -"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "Ht",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<tr><td class=\"inner\" colspan=\"8\"><b>Анализ крови на анализаторе<\/b><\/td><\/tr><tr><td class=\"inner\" colspan=\"\">Гематокрит<\/td><td class=\"inner\" colspan=\"\">43<\/td><td class=\"inner\" colspan=\"\">%<\/td><td class=\"inner\" colspan=\"\">35 - 45<\/td><td class=\"inner\" colspan=\"\"/><td class=\"inner\" colspan=\"\">Sysmex KX21<\/td><td class=\"inner\" colspan=\"\">20.12.2021 08:55<\/td><td class=\"inner\" colspan=\"\">лаборант Добролюбова В.Н.,<br/>врач КЛД Смирнова И.А.<\/td><\/tr><tr><td class=\"inner\" colspan=\"6\"><i>Примечание к результату исследования: -<\/i><\/td><td class=\"inner\" colspan=\"\">20.12.2021 10:42<\/td><td class=\"inner\" colspan=\"\">врач КЛД Смирнова И.А.<\/td><\/tr>"
+                },
+                "basedOn": [
+                    {"reference": "ServiceRequest/LabTestOAK"}
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1080",
+                            "code": "1017359",
+                            "display": "Гематокрит крови методом автоматизированного подсчёта",
+                            "version": "3.27"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567892"
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:42+03:00",
+                "issued": "2021-12-20T08:55:42+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "valueQuantity": {
+                    "value": 43,
+                    "unit": "%",
+                    "system": "1.2.643.5.1.13.13.11.1358",
+                    "code": "53",
+                    "extension": [
+                        {
+                            "url": "dic:version",
+                            "valueString": "3.2"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1080",
+                                        "code": "1017359",
+                                        "display": "Гематокрит крови методом автоматизированного подсчёта",
+                                        "version": "3.27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.99.2.257",
+                                "code": "N",
+                                "display": "нормальный",
+                                "version": "1.1"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {"reference": "specimen/spec1"},
+                "device": {"reference": "Device/DEV"},
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 35,
+                            "unit": "%"
+                        },
+                        "high": {
+                            "value": 45,
+                            "unit": "%"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "1.2.643.5.1.13.13.99.2.257",
+                                    "code": "N",
+                                    "display": "нормальный",
+                                    "version": "1.1"
+                                }
+                            ]
+                        },
+                        "appliesTo": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1040",
+                                        "code": "2",
+                                        "display": "Женский",
+                                        "version": "2.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "authorReference": {"reference": "Practitioner/author"},
+                        "time": "2021-12-20T10:42:39+03:00",
+                        "text": "Примечание к результату исследования: -"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "WBC",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<tr><td class=\"inner\" colspan=\"8\"><b>Анализ крови на анализаторе<\/b><\/td><\/tr><tr><td class=\"inner\" colspan=\"\">Лейкоциты<\/td><td class=\"inner\" colspan=\"\">9.09<\/td><td class=\"inner\" colspan=\"\">10^9/л<\/td><td class=\"inner\" colspan=\"\">4 - 10.4<\/td><td class=\"inner\" colspan=\"\"/><td class=\"inner\" colspan=\"\">Sysmex KX21<\/td><td class=\"inner\" colspan=\"\">20.12.2021 08:55<\/td><td class=\"inner\" colspan=\"\">лаборант Добролюбова В.Н.,<br/>врач КЛД Смирнова И.А.<\/td><\/tr><tr><td class=\"inner\" colspan=\"6\"><i>Примечание к результату исследования: -<\/i><\/td><td class=\"inner\" colspan=\"\">20.12.2021 10:42<\/td><td class=\"inner\" colspan=\"\">врач КЛД Смирнова И.А.<\/td><\/tr>"
+                },
+                "basedOn": [
+                    {"reference": "ServiceRequest/LabTestOAK"}
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1080",
+                            "code": "1017979",
+                            "display": "Лейкоциты, количество в крови методом автоматизированного подсчёта",
+                            "version": "3.27"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567893"
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:50+03:00",
+                "issued": "2021-12-20T08:55:50+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "valueQuantity": {
+                    "value": 9.09,
+                    "unit": "10^9/л",
+                    "system": "1.2.643.5.1.13.13.11.1358",
+                    "code": "322",
+                    "extension": [
+                        {
+                            "url": "dic:version",
+                            "valueString": "3.2"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1080",
+                                        "code": "1017979",
+                                        "display": "Лейкоциты, количество в крови методом автоматизированного подсчёта",
+                                        "version": "3.27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.99.2.257",
+                                "code": "N",
+                                "display": "нормальный",
+                                "version": "1.1"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {"reference": "specimen/spec1"},
+                "device": {"reference": "Device/DEV"},
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 4,
+                            "unit": "10^9/л"
+                        },
+                        "high": {
+                            "value": 10.4,
+                            "unit": "10^9/л"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "1.2.643.5.1.13.13.99.2.257",
+                                    "code": "N",
+                                    "display": "нормальный",
+                                    "version": "1.1"
+                                }
+                            ]
+                        },
+                        "appliesTo": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1040",
+                                        "code": "2",
+                                        "display": "Женский",
+                                        "version": "2.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "authorReference": {"reference": "Practitioner/author"},
+                        "time": "2021-12-20T10:42:43+03:00",
+                        "text": "Примечание к результату исследования: -"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "PLT",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<tr><td class=\"inner\" colspan=\"8\"><b>Анализ крови на анализаторе<\/b><\/td><\/tr><tr><td class=\"inner\" colspan=\"\">Тромбоциты<\/td><td class=\"inner\" colspan=\"\">300<\/td><td class=\"inner\" colspan=\"\">10^9/л<\/td><td class=\"inner\" colspan=\"\">179 - 403<\/td><td class=\"inner\" colspan=\"\"/><td class=\"inner\" colspan=\"\">Sysmex KX21<\/td><td class=\"inner\" colspan=\"\">20.12.2021 08:55<\/td><td class=\"inner\" colspan=\"\">лаборант Добролюбова В.Н.,<br/>врач КЛД Смирнова И.А.<\/td><\/tr><tr><td class=\"inner\" colspan=\"6\"><i>Примечание к результату исследования: -<\/i><\/td><td class=\"inner\" colspan=\"\">20.12.2021 10:42<\/td><td class=\"inner\" colspan=\"\">врач КЛД Смирнова И.А.<\/td><\/tr>"
+                },
+                "basedOn": [
+                    {"reference": "ServiceRequest/LabTestOAK"}
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1080",
+                            "code": "1017862",
+                            "display": "Тромбоциты в крови методом автоматизированного подсчёта",
+                            "version": "3.27"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66",
+                        "value": "1234567890"
+                    }
+                ],
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:55+03:00",
+                "issued": "2021-12-20T08:55:55+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "valueQuantity": {
+                    "value": 300,
+                    "unit": "10^9/л",
+                    "system": "1.2.643.5.1.13.13.11.1358",
+                    "code": "322",
+                    "extension": [
+                        {
+                            "url": "dic:version",
+                            "valueString": "3.2"
+                        }
+                    ]
+                },
+                "component": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1080",
+                                        "code": "1017862",
+                                        "display": "Тромбоциты в крови методом автоматизированного подсчёта",
+                                        "version": "3.27"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "1.2.643.5.1.13.13.99.2.257",
+                                "code": "N",
+                                "display": "нормальный",
+                                "version": "1.1"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {"reference": "specimen/spec1"},
+                "device": {"reference": "Device/DEV"},
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 179,
+                            "unit": "10^9/л"
+                        },
+                        "high": {
+                            "value": 403,
+                            "unit": "10^9/л"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "1.2.643.5.1.13.13.99.2.257",
+                                    "code": "N",
+                                    "display": "нормальный",
+                                    "version": "1.1"
+                                }
+                            ]
+                        },
+                        "appliesTo": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "1.2.643.5.1.13.13.11.1040",
+                                        "code": "2",
+                                        "display": "Женский",
+                                        "version": "2.1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {
+                        "authorReference": {"reference": "Practitioner/author"},
+                        "time": "2021-12-20T10:42:30+03:00",
+                        "text": "Примечание к результату исследования: -"
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "Report",
+                "status": "final",
+                "text": {
+                    "status": "generated",
+                    "div": "<span style=\"font-weight:bold;\">Заключение: <\/span><br/>Концентрация гемоглобина в венозной крови повышена.<p/><\/td><\/tr><\/tbody><\/table><br/><hr/>"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.99.2.166",
+                            "code": "901",
+                            "display": "Текстовое заключение по проведенным лабораторным исследованиям",
+                            "version": "1.68"
+                        }
+                    ]
+                },
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "effectiveDateTime": "2021-12-20T08:55:32+03:00",
+                "issued": "2021-12-20T08:55:32+03:00",
+                "performer": [
+                    {"reference": "Practitioner/author"},
+                    {"reference": "Practitioner/labjunior"}
+                ],
+                "specimen": [
+                    {"reference": "Specimen/spec1"}
+                ],
+                "result": [
+                    {"reference": "Observation/obs1"}
+                ],
+                "conclusion": "Концентрация гемоглобина в венозной крови повышена."
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "Services",
+                "status": "completed",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1070",
+                            "code": "B03.016.002",
+                            "display": "Общий (клинический) анализ крови",
+                            "version": "2.10"
+                        },
+                        {
+                            "system": "1.2.643.5.1.13.13.11.1070",
+                            "code": "A11.12.009",
+                            "display": "Взятие крови из периферической вены",
+                            "version": "2.10"
+                        }
+                    ]
+                },
+                "subject": {"reference": "Patient/735486"},
+                "encounter": {"reference": "Encounter/4455"},
+                "performedDateTime": "2021-12-20T11:11:01+03:00",
+                "performer": [
+                    {
+                        "actor": {"reference": "Practitioner/author"}
+                    }
+                ],
+                "report": [
+                    {"reference": "DiagnosticReport/Report"}
+                ]
+            }
+        }
+    ]
+}

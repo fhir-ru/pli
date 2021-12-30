@@ -1,0 +1,1251 @@
+Параметр#Пример заполнения#Тип#R#C#Комментарии
+ClinicalDocument##T#
+ClinicalDocument_xmlns#urn:hl7-org:v3#A
+ClinicalDocument_xmlns:xsi#http://www.w3.org/2001/XMLSchema-instance#A
+ClinicalDocument_xmlns:medService#urn:hl7-ru:medService#A
+ClinicalDocument_xmlns:fias#urn:hl7-ru:fias#A
+ClinicalDocument_xmlns:identity#urn:hl7-ru:identity#A
+ClinicalDocument_xmlns:address#urn:hl7-ru:address#A
+ClinicalDocument.realmCode##T###ЗАГОЛОВОК ДОКУМЕНТА "Протокол лабораторного исследования"  R [1..] Требуемый элемент. Элемент обязан иметь непустое наполнение, nullFlavor не разрешён [1..] Обязательный элемент. Элемент обязан присутствовать, но может иметь пустое наполнение с указанием причины отсутствия информации через nullFlavor [0..] Не обязательный элемент. Элемент может отсутствовать  R [1..1] Область применения документа (Страна)
+ClinicalDocument.realmCode_code#RU#A
+ClinicalDocument.typeId##T#R#1..1#R [1..1] Указатель на использование CDA R2
+ClinicalDocument.typeId_root#2.16.840.1.113883.1.3#A
+ClinicalDocument.typeId_extension#POCD_MT000040#A
+ClinicalDocument.templateId##T#R#1..1#R [1..1] Идентификатор документа "Руководство по реализации CDA (Release 2) уровень 3 Протокол лабораторного исследования Редакция 4" по справочнику "Реестр руководств по реализации и протоколов информационного взаимодействия структурированных электронных медицинских документов" (OID: 1.2.643.5.1.13.13.99.2.638)
+ClinicalDocument.templateId_root#1.2.643.5.1.13.2.7.5.1.7.9.4#A
+ClinicalDocument.id##T#R#1..1#R [1..1] Уникальный идентификатор документа по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.51 extension = идентификатор документа
+ClinicalDocument.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.51#A
+ClinicalDocument.id_extension#7854321#A
+ClinicalDocument.code##T#R#1..1#R [1..1] Тип документа
+ClinicalDocument.code_code#7#A
+ClinicalDocument.code_codeSystem#1.2.643.5.1.13.13.11.1522#A
+ClinicalDocument.code_codeSystemVersion#4.45#A
+ClinicalDocument.code_codeSystemName#Виды медицинской документации#A
+ClinicalDocument.code_displayName#Протокол лабораторного исследования#A
+ClinicalDocument.title##T#R#1..1#R [1..1] Заголовок документа
+ClinicalDocument.effectiveTime##T#R#1..1#R [1..1] Дата создания документа (с точностью до дня) (= дата выдачи документа = дата получения документа получателем)
+ClinicalDocument.effectiveTime_value#201812201220+0300#A
+ClinicalDocument.confidentialityCode##T#R#1..1#R [1..1] Уровень конфиденциальности медицинского документа
+ClinicalDocument.confidentialityCode_code#N#A
+ClinicalDocument.confidentialityCode_codeSystem#1.2.643.5.1.13.13.99.2.285#A
+ClinicalDocument.confidentialityCode_codeSystemVersion#1.2#A
+ClinicalDocument.confidentialityCode_codeSystemName#Уровень конфиденциальности медицинского документа#A
+ClinicalDocument.confidentialityCode_displayName#Обычный#A
+ClinicalDocument.languageCode##T#R#1..1#R [1..1] Язык документа
+ClinicalDocument.languageCode_code#ru-RU#A
+ClinicalDocument.setId##T#R#1..1#R [1..1] Уникальный идентификатор набора версий документа по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.50 extension = идентификатор набора версий документа
+ClinicalDocument.setId_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.50#A
+ClinicalDocument.setId_extension#9633#A
+ClinicalDocument.versionNumber##T#R#1..1#R [1..1] Номер версии данного документа
+ClinicalDocument.versionNumber_value#1#A
+ClinicalDocument.recordTarget##T#R#1..1#R [1..1] ДАННЫЕ О ПАЦИЕНТЕ
+ClinicalDocument.recordTarget.patientRole##T#R#1..1#R [1..1] Пациент (роль)
+ClinicalDocument.recordTarget.patientRole.id##T#R#1..1#R [1..1] Уникальный идентификатор пациента в МИС по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.10 extension = идентификатор пациента
+ClinicalDocument.recordTarget.patientRole.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.10#A
+ClinicalDocument.recordTarget.patientRole.id_extension#735486#A
+ClinicalDocument.recordTarget.patientRole.id##T#R#1..1#R [1..1] СНИЛС пациента
+ClinicalDocument.recordTarget.patientRole.id_root#1.2.643.100.3#A
+ClinicalDocument.recordTarget.patientRole.id_extension#25463625426#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc##T#R#1..1#[1..1] Документ, удостоверяющий личность получателя, серия, номер, кем выдан.
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IdentityCardType##T#R#1..1#R [1..1] Тип документа
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IdentityCardType_xsi:type#CD#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IdentityCardType_code#1#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IdentityCardType_codeSystem#1.2.643.5.1.13.13.99.2.48#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IdentityCardType_codeSystemVersion#5.1#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IdentityCardType_codeSystemName#Документы, удостоверяющие личность#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IdentityCardType_displayName#Паспорт гражданина Российской Федерации#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.Series##T#R#1..1#[1..1] Серия документа
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.Series_xsi:type#ST#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.Number##T#R#1..1#R [1..1] Номер документа
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.Number_xsi:type#ST#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IssueOrgName##T#R#1..1#[1..1] Кем выдан документ
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IssueOrgName_xsi:type#ST#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IssueOrgCode##T#R#1..1#[1..1] Кем выдан документ, код подразделения
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IssueOrgCode_xsi:type#ST#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IssueDate##T#R#1..1#R [1..1] Дата выдачи документа
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IssueDate_xsi:type#TS#A
+ClinicalDocument.recordTarget.patientRole.IdentityDoc.IssueDate_value#20050218#A
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy##T#R#1..1#[1..1] Полис ОМС
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.InsurancePolicyType##T#R#1..1#R [1..1] Тип полиса ОМС
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.InsurancePolicyType_xsi:type#CD#A
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.InsurancePolicyType_code#2#A
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.InsurancePolicyType_codeSystem#1.2.643.5.1.13.13.11.1035#A
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.InsurancePolicyType_codeSystemVersion#1.3#A
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.InsurancePolicyType_codeSystemName#Виды полиса обязательного медицинского страхования#A
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.InsurancePolicyType_displayName#Полис ОМС единого образца, бессрочный#A
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.Series##T#R#0..1#[0..1] Серия полиса ОМС
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.Series_nullFlavor#NI#A
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.Number##T#R#1..1#R [1..1] Номер полиса ОМС
+ClinicalDocument.recordTarget.patientRole.InsurancePolicy.Number_xsi:type#ST#A
+ClinicalDocument.recordTarget.patientRole.addr##T#R#1..2#[1..2] Адрес пациента [1]
+ClinicalDocument.recordTarget.patientRole.addr.Type##T#R#1..1#R [1..1] Тип адреса пациента
+ClinicalDocument.recordTarget.patientRole.addr.Type_xsi:type#CD#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_code#1#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_codeSystem#1.2.643.5.1.13.13.11.1504#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_codeSystemVersion#1.3#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_codeSystemName#Тип адреса пациента#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_displayName#Адрес по месту жительства (постоянной регистрации)#A
+ClinicalDocument.recordTarget.patientRole.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.recordTarget.patientRole.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_code#77#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.recordTarget.patientRole.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.recordTarget.patientRole.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.recordTarget.patientRole.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.recordTarget.patientRole.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.recordTarget.patientRole.addr##T#R#1..2#[1..2] Адрес пациента [2]
+ClinicalDocument.recordTarget.patientRole.addr.Type##T#R#1..1#R [1..1] Тип адреса пациента
+ClinicalDocument.recordTarget.patientRole.addr.Type_xsi:type#CD#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_code#3#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_codeSystem#1.2.643.5.1.13.13.11.1504#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_codeSystemVersion#1.3#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_codeSystemName#Тип адреса пациента#A
+ClinicalDocument.recordTarget.patientRole.addr.Type_displayName#Адрес фактического проживания (пребывания)#A
+ClinicalDocument.recordTarget.patientRole.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.recordTarget.patientRole.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_code#77#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.recordTarget.patientRole.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.recordTarget.patientRole.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.recordTarget.patientRole.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.recordTarget.patientRole.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.recordTarget.patientRole.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.recordTarget.patientRole.telecom##T#R#0..*#[0..*] Контакты пациента(телефон)[1]
+ClinicalDocument.recordTarget.patientRole.telecom_value#tel:+74951953745#A
+ClinicalDocument.recordTarget.patientRole.telecom##T#R#0..*#[0..*] Контакты пациента (мобильный телефон) [2]
+ClinicalDocument.recordTarget.patientRole.telecom_use#MC#A
+ClinicalDocument.recordTarget.patientRole.telecom_value#tel:+79034752364#A
+ClinicalDocument.recordTarget.patientRole.telecom##T#R#0..*#[0..*] Контакты пациента (электронная почта) [3]
+ClinicalDocument.recordTarget.patientRole.telecom_value#mailto: novosel.m.v@mail.ru#A
+ClinicalDocument.recordTarget.patientRole.patient##T#R#1..1#R [1..1] Пациент (человек)
+ClinicalDocument.recordTarget.patientRole.patient.name##T#R#1..1#R [1..1] ФИО пациента
+ClinicalDocument.recordTarget.patientRole.patient.name.family##T#R#1..1#R [1..1] Фамилия
+ClinicalDocument.recordTarget.patientRole.patient.name.given##T#R#1..1#R [1..1] Имя
+ClinicalDocument.recordTarget.patientRole.patient.name.Patronymic##T#R#0..1#[0..1] Отчество
+ClinicalDocument.recordTarget.patientRole.patient.name.Patronymic_xsi:type#ST#A
+ClinicalDocument.recordTarget.patientRole.patient.administrativeGenderCode##T#R#1..1#[1..1] Пол пациента
+ClinicalDocument.recordTarget.patientRole.patient.administrativeGenderCode_code#1#A
+ClinicalDocument.recordTarget.patientRole.patient.administrativeGenderCode_codeSystem#1.2.643.5.1.13.13.11.1040#A
+ClinicalDocument.recordTarget.patientRole.patient.administrativeGenderCode_codeSystemVersion#2.1#A
+ClinicalDocument.recordTarget.patientRole.patient.administrativeGenderCode_codeSystemName#Пол пациента#A
+ClinicalDocument.recordTarget.patientRole.patient.administrativeGenderCode_displayName#Мужской#A
+ClinicalDocument.recordTarget.patientRole.patient.birthTime##T#R#1..1#[1..1] Дата рождения пациента
+ClinicalDocument.recordTarget.patientRole.patient.birthTime_value#19771125#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization##T#R#1..1#R [1..1] Медицинская организация (индивидуальный предприниматель), оформившая протокол лабораторного исследования
+ClinicalDocument.recordTarget.patientRole.providerOrganization.id##T#R#1..1#R [1..1] Уникальный идентификатор медицинской организации организации - в атрибуте root по справочнику «Реестр медицинских организаций Российской Федерации» (OID: 1.2.643.5.1.13.13.11.1461), при наличии структурного подразделения атрибут extension заполняется по справочнику «ФРМО. Справочник структурных подразделений» (OID: 1.2.643.5.1.13.13.99.2.114)
+ClinicalDocument.recordTarget.patientRole.providerOrganization.id_root#1.2.643.5.1.13.13.12.2.77.8312#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.id_extension#1.2.643.5.1.13.13.12.2.77.8312.0.166444#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.id##T#R#0..1#[0..1] Номер лицензии на осуществление медицинской деятельности. Обязательно указывать при внесении данных о индивидуальном предпринимателе
+ClinicalDocument.recordTarget.patientRole.providerOrganization.id_root#1.2.643.5.1.13.2.1.1.1504.101#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.id_extension#ЛО-77-01-018580#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.id_assigningAuthorityName#Федеральная служба по надзору в сфере здравоохранения (Росздравнадзор). Дата регистрации: 14.08.2019.#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.Props##T#R#1..1#[1..1] Реквизиты организации
+ClinicalDocument.recordTarget.patientRole.providerOrganization.Props.Ogrn##T##0..1#[0..1] Код ОГРН
+ClinicalDocument.recordTarget.patientRole.providerOrganization.Props.Ogrn_xsi:type#ST#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.Props.Okato##T##0..1#[0..1] Код ОКАТО
+ClinicalDocument.recordTarget.patientRole.providerOrganization.Props.Okato_xsi:type#ST#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.name##T#R#1..1#R [1..1] Наименование медицинской организации или ФИО Индивидуального предпринимателя При заполнении протокола лабораторного исследования в медицинской организации указывается полное наименование медицинской организации. В случае заполнения протокола лабораторного исследования индивидуальным предпринимателем указывается его фамилия, имя, отчество
+ClinicalDocument.recordTarget.patientRole.providerOrganization.telecom##T#R#0..*#[0..*] Контакты организации (телефон) [1]
+ClinicalDocument.recordTarget.patientRole.providerOrganization.telecom_value#tel:+74997645002#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.telecom_use#WP#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.telecom##T#R#0..*#[0..*] Контакты организации (электронная почта) [2]
+ClinicalDocument.recordTarget.patientRole.providerOrganization.telecom_value#mailto: gp129@zdrav.mos.ru#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr##T#R#1..1#R [1..1] Адрес организации
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.stateCode_code#77#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.recordTarget.patientRole.providerOrganization.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.author##T#R#1..1#R [1..1] ДАННЫЕ ОБ АВТОРЕ ДОКУМЕНТА
+ClinicalDocument.author.time##T#
+ClinicalDocument.author.time_nullFlavor#NI#A
+ClinicalDocument.author.assignedAuthor##T#R#1..1#R [1..1] АВТОР (роль)
+ClinicalDocument.author.assignedAuthor.id##T#R#1..1#R [1..1] Уникальный идентификатор автора в МИС по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.70 extension = идентификатор персонала
+ClinicalDocument.author.assignedAuthor.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.author.assignedAuthor.id_extension#542177#A
+ClinicalDocument.author.assignedAuthor.id##T#R#1..1#R [1..1] СНИЛС автора
+ClinicalDocument.author.assignedAuthor.id_root#1.2.643.100.3#A
+ClinicalDocument.author.assignedAuthor.id_extension#52415377312#A
+ClinicalDocument.author.assignedAuthor.code##T#R#1..1#R [1..1] Код должности автора
+ClinicalDocument.author.assignedAuthor.code_code#35#A
+ClinicalDocument.author.assignedAuthor.code_codeSystem#1.2.643.5.1.13.13.11.1002#A
+ClinicalDocument.author.assignedAuthor.code_codeSystemVersion#7.5#A
+ClinicalDocument.author.assignedAuthor.code_codeSystemName#Должности медицинских и фармацевтических работников#A
+ClinicalDocument.author.assignedAuthor.code_displayName#врач клинической лабораторной диагностики#A
+ClinicalDocument.author.assignedAuthor.addr##T#R#0..1#[0..1] Адрес автора документа
+ClinicalDocument.author.assignedAuthor.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.author.assignedAuthor.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.author.assignedAuthor.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.author.assignedAuthor.addr.stateCode_code#77#A
+ClinicalDocument.author.assignedAuthor.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.author.assignedAuthor.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.author.assignedAuthor.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.author.assignedAuthor.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.author.assignedAuthor.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.author.assignedAuthor.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.author.assignedAuthor.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.author.assignedAuthor.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.author.assignedAuthor.telecom##T#R#0..*#[0..*] Контакты автора (телефон) [1]
+ClinicalDocument.author.assignedAuthor.telecom_value#tel:+74957443256#A
+ClinicalDocument.author.assignedAuthor.telecom##T#R#0..*#[0..*] Контакты автора (мобильный телефон) [2]
+ClinicalDocument.author.assignedAuthor.telecom_value#tel:+79267352628#A
+ClinicalDocument.author.assignedAuthor.telecom##T#R#0..*#[0..*] Контакты автора (электронная почта) [3]
+ClinicalDocument.author.assignedAuthor.telecom_value#mailto:smirnovа.a.i@rambler.ru#A
+ClinicalDocument.author.assignedAuthor.assignedPerson##T#R#1..1#R [1..1] АВТОР (человек)
+ClinicalDocument.author.assignedAuthor.assignedPerson.name##T#R#1..1#R [1..1] Фамилия, Имя, Отчество автора
+ClinicalDocument.author.assignedAuthor.assignedPerson.name.family##T#R#1..1#R [1..1] Фамилия
+ClinicalDocument.author.assignedAuthor.assignedPerson.name.given##T#R#1..1#R [1..1] Имя
+ClinicalDocument.author.assignedAuthor.assignedPerson.name.Patronymic##T#R#0..1#[0..1] Отчество
+ClinicalDocument.author.assignedAuthor.assignedPerson.name.Patronymic_xsi:type#ST#A
+ClinicalDocument.author.assignedAuthor.representedOrganization##T#R#0..1#[0..1] Место работы автора
+ClinicalDocument.author.assignedAuthor.representedOrganization_classCode#ORG#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.id##T#R#1..1#R [1..1] Уникальный идентификатор медицинской организации организации - в атрибуте root по справочнику «Реестр медицинских организаций Российской Федерации» (OID: 1.2.643.5.1.13.13.11.1461), при наличии структурного подразделения атрибут extension заполняется по справочнику «ФРМО. Справочник структурных подразделений» (OID: 1.2.643.5.1.13.13.99.2.114)
+ClinicalDocument.author.assignedAuthor.representedOrganization.id_root#1.2.643.5.1.13.13.12.2.77.8312#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.id_extension#1.2.643.5.1.13.13.12.2.77.8312.0.166444#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.name##T#R#1..1#R [1..1] Наименование организации
+ClinicalDocument.author.assignedAuthor.representedOrganization.telecom##T#R#0..*#[0..*] Контакты организации (телефон) [1]
+ClinicalDocument.author.assignedAuthor.representedOrganization.telecom_value#tel:+74992613850#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.telecom_use#WP#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.telecom##T#R#0..*#[0..*] Контакты организации (электронная почта) [2]
+ClinicalDocument.author.assignedAuthor.representedOrganization.telecom_value#mailto: info@gp129.mosgorzdrav.ru#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr##T#R#0..1#[0..1] Адрес организации
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.stateCode_code#77#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.author.assignedAuthor.representedOrganization.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.custodian##T#R#1..1#R [1..1] ДАННЫЕ ОБ ОРГАНИЗАЦИИ-ВЛАДЕЛЬЦЕ ДОКУМЕНТА
+ClinicalDocument.custodian.assignedCustodian##T#R#1..1#R [1..1] Организация-владелец документа (роль)
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization##T#R#1..1#R [1..1] Организация-владелец документа (организация)
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization_classCode#ORG#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.id##T#R#1..1#R [1..1] Уникальный идентификатор медицинской организации организации - в атрибуте root по справочнику «Реестр медицинских организаций Российской Федерации» (OID: 1.2.643.5.1.13.13.11.1461), при наличии структурного подразделения атрибут extension заполняется по справочнику «ФРМО. Справочник структурных подразделений» (OID: 1.2.643.5.1.13.13.99.2.114)
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.id_root#1.2.643.5.1.13.13.12.2.77.8312#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.id_extension#1.2.643.5.1.13.13.12.2.77.8312.0.166444#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.name##T#R#1..1#R [1..1] Наименование организации-владельца документа
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.telecom##T#R#0..*#[0..*] Контакты организации (телефон)
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.telecom_value#tel:+74997645002#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.telecom_use#WP#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr##T#R#1..1#R [1..1] Адрес организации
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.stateCode_code#77#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.custodian.assignedCustodian.representedCustodianOrganization.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.informationRecipient##T#R#1..1#R [1..1] ДАННЫЕ О ПОЛУЧАТЕЛЕ ДОКУМЕНТА - МЗ РФ
+ClinicalDocument.informationRecipient.intendedRecipient##T#R#1..1#R [1..1] Получатель документа (роль)
+ClinicalDocument.informationRecipient.intendedRecipient.receivedOrganization##T#R#1..1#R [1..1] Получатель документа (РЭМД)
+ClinicalDocument.informationRecipient.intendedRecipient.receivedOrganization.id##T#R#1..1#R [1..1] Идентификатор получающей организации
+ClinicalDocument.informationRecipient.intendedRecipient.receivedOrganization.id_root#1.2.643.5.1.13#A
+ClinicalDocument.informationRecipient.intendedRecipient.receivedOrganization.name##T#R#1..1#R [1..1] Наименование получающей организации
+ClinicalDocument.legalAuthenticator##T#R#1..1#R [1..1] ДАННЫЕ О ЛИЦЕ, ПРИДАВШЕМ ЮРИДИЧЕСКУЮ СИЛУ ДОКУМЕНТУ
+ClinicalDocument.legalAuthenticator.time##T#
+ClinicalDocument.legalAuthenticator.time_nullFlavor#NI#A
+ClinicalDocument.legalAuthenticator.signatureCode##T#
+ClinicalDocument.legalAuthenticator.signatureCode_nullFlavor#NI#A
+ClinicalDocument.legalAuthenticator.assignedEntity##T#R#1..1#R [1..1] Лицо, придавшее юридическую силу документу (роль)
+ClinicalDocument.legalAuthenticator.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор лица, придавшего юридическую силу документу в МИС по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.70 extension = идентификатор персонала
+ClinicalDocument.legalAuthenticator.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.legalAuthenticator.assignedEntity.id_extension#512174#A
+ClinicalDocument.legalAuthenticator.assignedEntity.id##T#R#1..1#R [1..1] СНИЛС лица, придавшего юридическую силу документу
+ClinicalDocument.legalAuthenticator.assignedEntity.id_root#1.2.643.100.3#A
+ClinicalDocument.legalAuthenticator.assignedEntity.id_extension#52415372312#A
+ClinicalDocument.legalAuthenticator.assignedEntity.code##T#R#1..1#R [1..1] Код должности лица, придавшего юридическую силу документу
+ClinicalDocument.legalAuthenticator.assignedEntity.code_code#431#A
+ClinicalDocument.legalAuthenticator.assignedEntity.code_codeSystem#1.2.643.5.1.13.13.11.1002#A
+ClinicalDocument.legalAuthenticator.assignedEntity.code_codeSystemVersion#7.5#A
+ClinicalDocument.legalAuthenticator.assignedEntity.code_codeSystemName#Должности медицинских и фармацевтических работников#A
+ClinicalDocument.legalAuthenticator.assignedEntity.code_displayName#заведующий лабораторией медицинской организации#A
+ClinicalDocument.legalAuthenticator.assignedEntity.addr##T#R#0..1#[0..1] Адрес лица, придавшего юридическую силу документу
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.stateCode_code#77#A
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.legalAuthenticator.assignedEntity.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.legalAuthenticator.assignedEntity.telecom##T#R#0..*#[0..*] Контакты лица, придавшего юридическую силу документу (телефон) [1]
+ClinicalDocument.legalAuthenticator.assignedEntity.telecom_value#tel:+74957443256#A
+ClinicalDocument.legalAuthenticator.assignedEntity.telecom##T#R#0..*#[0..*] Контакты лица, придавшего юридическую силу документу (мобильный телефон) [2]
+ClinicalDocument.legalAuthenticator.assignedEntity.telecom_value#tel:+79267352628#A
+ClinicalDocument.legalAuthenticator.assignedEntity.telecom##T#R#0..*#[0..*] Контакты лица, придавшего юридическую силу документу (электронная почта) [3]
+ClinicalDocument.legalAuthenticator.assignedEntity.telecom_value#mailto:ivanov.a.i@rambler.ru#A
+ClinicalDocument.legalAuthenticator.assignedEntity.assignedPerson##T#R#1..1#R [1..1] Лицо, придавшее юридическую силу документу (человек)
+ClinicalDocument.legalAuthenticator.assignedEntity.assignedPerson.name##T#R#1..1#R [1..1] Фамилия, Имя, Отчество лица, придавшего юридическую силу документу
+ClinicalDocument.legalAuthenticator.assignedEntity.assignedPerson.name.family##T#R#1..1#R [1..1] Фамилия
+ClinicalDocument.legalAuthenticator.assignedEntity.assignedPerson.name.given##T#R#1..1#R [1..1] Имя
+ClinicalDocument.legalAuthenticator.assignedEntity.assignedPerson.name.Patronymic##T#R#0..1#[0..1] Отчество
+ClinicalDocument.legalAuthenticator.assignedEntity.assignedPerson.name.Patronymic_xsi:type#ST#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization##T#R#0..1#[0..1] Место работы лица, придавшего юридическую силу документу
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization_classCode#ORG#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.id##T#R#1..1#R [1..1] Уникальный идентификатор медицинской организации организации - в атрибуте root по справочнику «Реестр медицинских организаций Российской Федерации» (OID: 1.2.643.5.1.13.13.11.1461), при наличии структурного подразделения атрибут extension заполняется по справочнику «ФРМО. Справочник структурных подразделений» (OID: 1.2.643.5.1.13.13.99.2.114)
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.id_root#1.2.643.5.1.13.13.12.2.77.8312#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.id_extension#1.2.643.5.1.13.13.12.2.77.8312.0.166444#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.name##T#R#1..1#R [1..1] Наименование организации
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.telecom##T#R#0..*#[0..*] Контакты организации (телефон) [1]
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.telecom_value#tel:+74997645002#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.telecom_use#WP#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.telecom##T#R#0..*#[0..*] Контакты организации (электронная почта) [2]
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.telecom_value#mailto: gp129@zdrav.mos.ru#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr##T#R#1..1#[1..1] Адрес организации
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.stateCode_code#77#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.legalAuthenticator.assignedEntity.representedOrganization.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.participant##T#R#1..1#R [1..1] СВЕДЕНИЯ ОБ ИСТОЧНИКЕ ОПЛАТЫ
+ClinicalDocument.participant_typeCode#IND#A
+ClinicalDocument.participant.associatedEntity##T#R#1..1#R [1..1] Источник оплаты
+ClinicalDocument.participant.associatedEntity_classCode#GUAR#A
+ClinicalDocument.participant.associatedEntity.code##T##1..1#[1..1] Кодирование источника оплаты
+ClinicalDocument.participant.associatedEntity.code_code#1#A
+ClinicalDocument.participant.associatedEntity.code_codeSystem#1.2.643.5.1.13.13.11.1039#A
+ClinicalDocument.participant.associatedEntity.code_codeSystemVersion#5.2#A
+ClinicalDocument.participant.associatedEntity.code_codeSystemName#Источники оплаты медицинской помощи#A
+ClinicalDocument.participant.associatedEntity.code_displayName#Средства обязательного медицинского страхования#A
+ClinicalDocument.participant.associatedEntity.DocInfo##T##1..1#[1..1] Документ основание
+ClinicalDocument.participant.associatedEntity.DocInfo.IdentityDocType##T#R#1..1#R [1..1] Тип документа
+ClinicalDocument.participant.associatedEntity.DocInfo.IdentityDocType_xsi:type#CD#A
+ClinicalDocument.participant.associatedEntity.DocInfo.IdentityDocType_code#1#A
+ClinicalDocument.participant.associatedEntity.DocInfo.IdentityDocType_codeSystem#1.2.643.5.1.13.13.99.2.724#A
+ClinicalDocument.participant.associatedEntity.DocInfo.IdentityDocType_codeSystemVersion#1.1#A
+ClinicalDocument.participant.associatedEntity.DocInfo.IdentityDocType_codeSystemName#Типы документов оснований#A
+ClinicalDocument.participant.associatedEntity.DocInfo.IdentityDocType_displayName#Полис ОМС#A
+ClinicalDocument.participant.associatedEntity.DocInfo.InsurancePolicyType##T#R#1..1#[1..1] Тип полиса ОМС В случае, когда оплата идет по ОМС, но нет соответствующего документа, то указывается атрибут @nullFlavor со значением “NAV”
+ClinicalDocument.participant.associatedEntity.DocInfo.InsurancePolicyType_xsi:type#CD#A
+ClinicalDocument.participant.associatedEntity.DocInfo.InsurancePolicyType_code#2#A
+ClinicalDocument.participant.associatedEntity.DocInfo.InsurancePolicyType_codeSystem#1.2.643.5.1.13.13.11.1035#A
+ClinicalDocument.participant.associatedEntity.DocInfo.InsurancePolicyType_codeSystemVersion#1.3#A
+ClinicalDocument.participant.associatedEntity.DocInfo.InsurancePolicyType_codeSystemName#Виды полиса обязательного медицинского страхования#A
+ClinicalDocument.participant.associatedEntity.DocInfo.InsurancePolicyType_displayName#Полис ОМС единого образца, бессрочный#A
+ClinicalDocument.participant.associatedEntity.DocInfo.Series##T#R#1..1#[1..1] Серия полиса ОМС
+ClinicalDocument.participant.associatedEntity.DocInfo.Series_nullFlavor#NA#A
+ClinicalDocument.participant.associatedEntity.DocInfo.Number##T#R#1..1#[1..1] Номер документа В случае, когда оплата идет по ОМС, но нет соответствующего документа, то указывается атрибут @nullFlavor со значением “NAV”
+ClinicalDocument.participant.associatedEntity.DocInfo.Number_xsi:type#ST#A
+ClinicalDocument.participant.associatedEntity.DocInfo.INN##T#R#1..1#[1..1] ИНН
+ClinicalDocument.participant.associatedEntity.DocInfo.INN_xsi:type#ST#A
+ClinicalDocument.participant.associatedEntity.DocInfo.effectivetime##T#R#1..1#[1..1] Срок действия документа В случае, когда оплата идет по ОМС, но нет соответствующего документа, то указывается атрибут @nullFlavor со значением “NAV”
+ClinicalDocument.participant.associatedEntity.DocInfo.effectivetime.low##T#R#1..1#R [1..1] Дата начала действия документа
+ClinicalDocument.participant.associatedEntity.DocInfo.effectivetime.low_xsi:type#TS#A
+ClinicalDocument.participant.associatedEntity.DocInfo.effectivetime.low_value#20171025#A
+ClinicalDocument.participant.associatedEntity.DocInfo.effectivetime.high##T#R#1..1#[1..1] Дата конца действия документа
+ClinicalDocument.participant.associatedEntity.DocInfo.effectivetime.high_nullFlavor#NA#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization##T##0..1#[0..1] Сведения об организации (страховой компании или юридического лица)
+ClinicalDocument.participant.associatedEntity.scopingOrganization.id##T##1..1#[1..1] Уникальный идентификатор страховой компании или юридического лица
+ClinicalDocument.participant.associatedEntity.scopingOrganization.id_root#1.2.643.5.1.13.13.99.2.183#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.id_extension#77013#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.name##T#R#1..1#R [1..1] Наименование страховой компании или юридического лица
+ClinicalDocument.participant.associatedEntity.scopingOrganization.telecom##T#R#1..*#[1..*] Контакты страховой компании или юридического лица (телефон)
+ClinicalDocument.participant.associatedEntity.scopingOrganization.telecom_value#tel:+74952323491#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr##T#R#1..1#[1..1] Адрес страховой компании или юридического лица
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_code#77#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.participant##T#R#0..1#[0..1] СВЕДЕНИЯ О НАПРАВИВШЕМ ЛИЦЕ И ОРГАНИЗАЦИИ
+ClinicalDocument.participant_typeCode#REF#A
+ClinicalDocument.participant.associatedEntity##T#
+ClinicalDocument.participant.associatedEntity_classCode#PROV#A
+ClinicalDocument.participant.associatedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор направившего лица
+ClinicalDocument.participant.associatedEntity.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.70#A
+ClinicalDocument.participant.associatedEntity.id_extension#183640#A
+ClinicalDocument.participant.associatedEntity.id##T#R#1..1#[1..1] СНИЛС направившего лица
+ClinicalDocument.participant.associatedEntity.id_root#1.2.643.100.3#A
+ClinicalDocument.participant.associatedEntity.id_extension#15679879686#A
+ClinicalDocument.participant.associatedEntity.code##T#R#1..1#R [1..1] Код должности направившего лица
+ClinicalDocument.participant.associatedEntity.code_code#109#A
+ClinicalDocument.participant.associatedEntity.code_codeSystem#1.2.643.5.1.13.13.11.1002#A
+ClinicalDocument.participant.associatedEntity.code_codeSystemVersion#7.5#A
+ClinicalDocument.participant.associatedEntity.code_codeSystemName#Должности медицинских и фармацевтических работников#A
+ClinicalDocument.participant.associatedEntity.code_displayName#врач-терапевт#A
+ClinicalDocument.participant.associatedEntity.addr##T#R#1..1#[1..1] Адрес направившего лица
+ClinicalDocument.participant.associatedEntity.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.participant.associatedEntity.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.participant.associatedEntity.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.participant.associatedEntity.addr.stateCode_code#77#A
+ClinicalDocument.participant.associatedEntity.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.participant.associatedEntity.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.participant.associatedEntity.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.participant.associatedEntity.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.participant.associatedEntity.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.participant.associatedEntity.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.participant.associatedEntity.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.participant.associatedEntity.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.participant.associatedEntity.telecom##T#R#0..1#[0..1] Контакты направившего лица (телефон)
+ClinicalDocument.participant.associatedEntity.telecom_value#tel:+79065184597#A
+ClinicalDocument.participant.associatedEntity.telecom_use#WP#A
+ClinicalDocument.participant.associatedEntity.associatedPerson##T#R#1..1#R [1..1] Направивший врач (человек)
+ClinicalDocument.participant.associatedEntity.associatedPerson.name##T#R#1..1#R [1..1] Фамилия, Имя, Отчество направившего врача
+ClinicalDocument.participant.associatedEntity.associatedPerson.name.family##T#R#1..1#R [1..1] Фамилия
+ClinicalDocument.participant.associatedEntity.associatedPerson.name.given##T#R#1..1#R [1..1] Имя
+ClinicalDocument.participant.associatedEntity.associatedPerson.name.Patronymic##T#R#0..1#[0..1] Отчество
+ClinicalDocument.participant.associatedEntity.associatedPerson.name.Patronymic_xsi:type#ST#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization##T#R#0..1#[0..1] Место работы направившего врача
+ClinicalDocument.participant.associatedEntity.scopingOrganization.id##T#R#1..1#R [1..1] Уникальный идентификатор направившего учреждения организации - по справочнику «Реестр медицинских организаций Российской Федерации» (OID: 1.2.643.5.1.13.13.11.1461)
+ClinicalDocument.participant.associatedEntity.scopingOrganization.id_root#1.2.643.5.1.13.13.12.2.77.7809#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.name##T#R#1..1#R [1..1] Наименование направившего учреждения
+ClinicalDocument.participant.associatedEntity.scopingOrganization.telecom##T#R#0..*#[0..*] Контакты направившего учреждения (телефон)
+ClinicalDocument.participant.associatedEntity.scopingOrganization.telecom_value#tel:+74957796609#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.telecom_use#WP#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr##T#R#1..1#R [1..1] Адрес направившего учреждения
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_code#77#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.participant.associatedEntity.scopingOrganization.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.inFulfillmentOf##T#R#0..1#[0..1] СВЕДЕНИЯ О НАПРАВЛЕНИИ
+ClinicalDocument.inFulfillmentOf.order##T#R#1..1#R [1..1] Направление
+ClinicalDocument.inFulfillmentOf.order.id##T#R#1..1#R [1..1] Уникальный идентификатор направления на лабораторное исследование
+ClinicalDocument.inFulfillmentOf.order.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.51#A
+ClinicalDocument.inFulfillmentOf.order.id_extension#987964#A
+ClinicalDocument.inFulfillmentOf.order.code##T#R#1..1#R [1..1] Вид медицинского направления
+ClinicalDocument.inFulfillmentOf.order.code_code#107#A
+ClinicalDocument.inFulfillmentOf.order.code_codeSystem#1.2.643.5.1.13.13.11.1522#A
+ClinicalDocument.inFulfillmentOf.order.code_codeSystemVersion#4.45#A
+ClinicalDocument.inFulfillmentOf.order.code_codeSystemName#Виды медицинской документации#A
+ClinicalDocument.inFulfillmentOf.order.code_displayName#Направление на лабораторное исследование#A
+ClinicalDocument.documentationOf##T#R#1..*#R [1..*] СВЕДЕНИЯ О ДОКУМЕНТИРУЕМОМ СОБЫТИИ
+ClinicalDocument.documentationOf.serviceEvent##T#R#1..1#R [1..1] Проведённое исследование
+ClinicalDocument.documentationOf.serviceEvent.code##T#R#1..1#R [1..1] Тип документируемого события
+ClinicalDocument.documentationOf.serviceEvent.code_code#4#A
+ClinicalDocument.documentationOf.serviceEvent.code_codeSystem#1.2.643.5.1.13.13.99.2.726#A
+ClinicalDocument.documentationOf.serviceEvent.code_codeSystemVersion#2.6#A
+ClinicalDocument.documentationOf.serviceEvent.code_codeSystemName#Типы документированных событий#A
+ClinicalDocument.documentationOf.serviceEvent.code_displayName#Лабораторное исследование#A
+ClinicalDocument.documentationOf.serviceEvent.effectiveTime##T#R#1..1#R [1..1] Даты исследования
+ClinicalDocument.documentationOf.serviceEvent.effectiveTime.low##T#R#1..1#R [1..1] Дата начала исследования (доставка материала в лабораторию)
+ClinicalDocument.documentationOf.serviceEvent.effectiveTime.low_value#201812200830+0300#A
+ClinicalDocument.documentationOf.serviceEvent.effectiveTime.high##T#R#1..1#R [1..1] Дата окончания исследования
+ClinicalDocument.documentationOf.serviceEvent.effectiveTime.high_value#201812201610+0300#A
+ClinicalDocument.documentationOf.serviceEvent.serviceForm##T#R#1..1#[1..1] Форма оказания медицинской помощи
+ClinicalDocument.documentationOf.serviceEvent.serviceForm_code#1#A
+ClinicalDocument.documentationOf.serviceEvent.serviceForm_codeSystem#1.2.643.5.1.13.13.11.1551#A
+ClinicalDocument.documentationOf.serviceEvent.serviceForm_codeSystemVersion#1.1#A
+ClinicalDocument.documentationOf.serviceEvent.serviceForm_codeSystemName#Формы оказания медицинской помощи#A
+ClinicalDocument.documentationOf.serviceEvent.serviceForm_displayName#плановая#A
+ClinicalDocument.documentationOf.serviceEvent.serviceType##T#R#1..1#[1..1] Вид оказания медицинской помощи
+ClinicalDocument.documentationOf.serviceEvent.serviceType_code#2#A
+ClinicalDocument.documentationOf.serviceEvent.serviceType_codeSystem#1.2.643.5.1.13.13.11.1034#A
+ClinicalDocument.documentationOf.serviceEvent.serviceType_codeSystemVersion#4.2#A
+ClinicalDocument.documentationOf.serviceEvent.serviceType_codeSystemName#Виды медицинской помощи#A
+ClinicalDocument.documentationOf.serviceEvent.serviceType_displayName#Первичная врачебная медико-санитарная помощь#A
+ClinicalDocument.documentationOf.serviceEvent.serviceCond##T#R#1..1#[1..1] Условия оказания медицинской помощи
+ClinicalDocument.documentationOf.serviceEvent.serviceCond_code#2#A
+ClinicalDocument.documentationOf.serviceEvent.serviceCond_codeSystem#1.2.643.5.1.13.13.99.2.322#A
+ClinicalDocument.documentationOf.serviceEvent.serviceCond_codeSystemVersion#1.2#A
+ClinicalDocument.documentationOf.serviceEvent.serviceCond_codeSystemName#Условия оказания медицинской помощи#A
+ClinicalDocument.documentationOf.serviceEvent.serviceCond_displayName#Амбулаторно#A
+ClinicalDocument.documentationOf.serviceEvent.performer##T#R#1..*#R [1..*] СВЕДЕНИЯ ОБ ИСПОЛНИТЕЛЯХ ИССЛЕДОВАНИЯ
+ClinicalDocument.documentationOf.serviceEvent.performer_typeCode#PPRF#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity##T#
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id_extension#542177#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id##T#R#1..1#R [1..1] СНИЛС исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id_root#1.2.643.100.3#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id_extension#52415377312#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code##T#R#1..1#R [1..1] Должность исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_code#35#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_codeSystem#1.2.643.5.1.13.13.11.1002#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_codeSystemVersion#7.5#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_codeSystemName#Должности медицинских и фармацевтических работников#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_displayName#врач клинической лабораторной диагностики#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr##T#R#0..1#[0..1] Адрес исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_code#77#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson##T#R#0..1#[0..1] Контакты исполнителя R [1..1] Исполнитель
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name##T#R#1..1#R [1..1] Фамилия, Имя, Отчество исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name.family##T#R#1..1#R [1..1] Фамилия
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name.given##T#R#1..1#R [1..1] Имя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name.Patronymic##T#R#0..1#[0..1] Отчество
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name.Patronymic_xsi:type#ST#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization##T#R#1..1#R [1..1] Место работы исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization_classCode#ORG#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.id##T#R#1..1#R [1..1] Идентификатор организации исполнителя организации - в атрибуте root по справочнику «Реестр медицинских организаций Российской Федерации» (OID: 1.2.643.5.1.13.13.11.1461), при наличии структурного подразделения атрибут extension заполняется по справочнику «ФРМО. Справочник структурных подразделений» (OID: 1.2.643.5.1.13.13.99.2.114)
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.id_root#1.2.643.5.1.13.13.12.2.77.8312#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.id_extension#1.2.643.5.1.13.13.12.2.77.8312.0.166444#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.name##T#R#1..1#R [1..1] Наименование организации исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.telecom##T#R#1..1#R [1..1] Контакты организации исполнителя (телефон)
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.telecom_value#tel:+74951564895#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.telecom_use#WP#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr##T#R#1..1#R [1..1] Адрес организации исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_code#77#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.documentationOf.serviceEvent.performer##T#
+ClinicalDocument.documentationOf.serviceEvent.performer_typeCode#SPRF#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity##T#
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id_extension#542323#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id##T#R#1..1#R [1..1] СНИЛС исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id_root#1.2.643.100.3#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.id_extension#52415377312#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code##T#R#1..1#R [1..1] Должность исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_code#177#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_codeSystem#1.2.643.5.1.13.13.11.1002#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_codeSystemVersion#7.5#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_codeSystemName#Должности медицинских и фармацевтических работников#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.code_displayName#медицинский лабораторный техник (фельдшер-лаборант)#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr##T#R#0..1#[0..1] Адрес исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_code#77#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson##T#R#1..1#R [1..1] Исполнитель
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name##T#R#1..1#R [1..1] Фамилия, Имя, Отчество исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name.family##T#R#1..1#R [1..1] Фамилия
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name.given##T#R#1..1#R [1..1] Имя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name.Patronymic##T#R#0..1#[0..1] Отчество
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.assignedPerson.name.Patronymic_xsi:type#ST#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization##T#R#1..1#R [1..1] Место работы исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization_classCode#ORG#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.id##T#R#1..1#R [1..1] Идентификатор организации исполнителя организации - в атрибуте root по справочнику «Реестр медицинских организаций Российской Федерации» (OID: 1.2.643.5.1.13.13.11.1461), при наличии структурного подразделения атрибут extension заполняется по справочнику «ФРМО. Справочник структурных подразделений» (OID: 1.2.643.5.1.13.13.99.2.114)
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.id_root#1.2.643.5.1.13.13.12.2.77.8312#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.id_extension#1.2.643.5.1.13.13.12.2.77.8312.0.166444#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.name##T#R#1..1#R [1..1] Наименование организации исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.telecom##T#R#1..1#R [1..1] Контакты организации исполнителя (телефон)
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.telecom_value#tel:+74951564895#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.telecom_use#WP#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr##T#R#1..1#R [1..1] Адрес организации исполнителя
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_code#77#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.documentationOf.serviceEvent.performer.assignedEntity.representedOrganization.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.componentOf##T#R#1..1#R [1..1] СВЕДЕНИЯ О СЛУЧАЕ ОКАЗАНИЯ МЕДИЦИНСКОЙ ПОМОЩИ
+ClinicalDocument.componentOf.encompassingEncounter##T#R#1..1#R [1..1] Случай оказания медицинской помощи
+ClinicalDocument.componentOf.encompassingEncounter.id##T#R#1..1#R [1..1] Уникальный идентификатор случая оказания медицинской помощи
+ClinicalDocument.componentOf.encompassingEncounter.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.15#A
+ClinicalDocument.componentOf.encompassingEncounter.id_extension#5469-16#A
+ClinicalDocument.componentOf.encompassingEncounter.id##T#R#0..1#[0..1] Идентификатор случая оказания медицинской помощи: номер истории болезни, амбулаторной карты по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.16 extension = номер истории болезни или по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.17 extension = номер амбулаторной карты
+ClinicalDocument.componentOf.encompassingEncounter.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.17#A
+ClinicalDocument.componentOf.encompassingEncounter.id_extension#5316-16#A
+ClinicalDocument.componentOf.encompassingEncounter.code##T#R#0..1#[0..1] Типы медицинской карты
+ClinicalDocument.componentOf.encompassingEncounter.code_code#1#A
+ClinicalDocument.componentOf.encompassingEncounter.code_codeSystem#1.2.643.5.1.13.13.99.2.723#A
+ClinicalDocument.componentOf.encompassingEncounter.code_codeSystemVersion#1.1#A
+ClinicalDocument.componentOf.encompassingEncounter.code_codeSystemName#Типы медицинских карт#A
+ClinicalDocument.componentOf.encompassingEncounter.code_displayName#Амбулаторная медицинская карта#A
+ClinicalDocument.componentOf.encompassingEncounter.DocType##T#R#0..1#[0..1] Вид медицинской карты
+ClinicalDocument.componentOf.encompassingEncounter.DocType_code#41#A
+ClinicalDocument.componentOf.encompassingEncounter.DocType_codeSystem#1.2.643.5.1.13.13.11.1522#A
+ClinicalDocument.componentOf.encompassingEncounter.DocType_codeSystemVersion#4.45#A
+ClinicalDocument.componentOf.encompassingEncounter.DocType_codeSystemName#Виды медицинской документации#A
+ClinicalDocument.componentOf.encompassingEncounter.DocType_displayName#Медицинская карта пациента, получающего медицинскую помощь в амбулаторных условиях#A
+ClinicalDocument.componentOf.encompassingEncounter.effectiveTime##T#R#1..1#R [1..1] Даты начала и окончания случая
+ClinicalDocument.componentOf.encompassingEncounter.effectiveTime.low##T#R#1..1#R [1..1] Дата начала случая
+ClinicalDocument.componentOf.encompassingEncounter.effectiveTime.low_value#201812200830+0300#A
+ClinicalDocument.componentOf.encompassingEncounter.effectiveTime.high##T#R#0..1#[0..1] Дата окончания случая
+ClinicalDocument.componentOf.encompassingEncounter.effectiveTime.high_value#201812201900+0300#A
+ClinicalDocument.component##T#R#1..1#ТЕЛО ДОКУМЕНТА
+ClinicalDocument.component.structuredBody##T#R#1..1#R [1..1] Структурированное тело, соответствующее третьему уровню CDA
+ClinicalDocument.component.structuredBody.component##T#R#1..1#R [1..1] Информация об исследованных материалах (Исследованные материалы)
+ClinicalDocument.component.structuredBody.component.section##T#
+ClinicalDocument.component.structuredBody.component.section.code##T#R#1..1#R [1..1] Информация о коде секции и кодификаторе
+ClinicalDocument.component.structuredBody.component.section.code_code#SPECIMENS#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystem#1.2.643.5.1.13.13.99.2.197#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystemVersion#1.19#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystemName#Секции электронных медицинских документов#A
+ClinicalDocument.component.structuredBody.component.section.code_displayName#Информация об исследованных материалах#A
+ClinicalDocument.component.structuredBody.component.section.title##T#R#1..1#R [1..1] Заголовок секции
+ClinicalDocument.component.structuredBody.component.section.text##T#R#1..1#R [1..1] Текстовая информация об исследованных материалах
+ClinicalDocument.component.structuredBody.component.section.entry##T#R#1..1#R [1..1] Информация об исследованных материалах
+ClinicalDocument.component.structuredBody.component.section.entry.organizer##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer_classCode#CLUSTER#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.statusCode##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component##T#R#1..1#R [1..1] Данные о проведенных процедурах забора материала (забор крови)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure##T#R#1..1#R [1..1] Данные о проведенной процедуре
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure_classCode#PROC#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.code##T#R#1..1#R [1..1] Набор значений, Справочник, OID:1.2.643.5.1.13.13.11.1070 «Номенклатура медицинских услуг»
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.code_code#A11.12.009#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.code_codeSystem#1.2.643.5.1.13.13.11.1070#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.code_codeSystemVersion#2.10#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.code_codeSystemName#Номенклатура медицинских услуг#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.code_displayName#Взятие крови из периферической вены#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.statusCode##T#R#1..1#R [1..1] Статус выполнения процедуры
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.effectiveTime##T#R#1..1#R [1..1] Время забора материала. Если материал собирался некоторый интервал времени, то этот интервал указывается явным образом ДОЛЖНО быть указано с точностью до дня, СЛЕДУЕТ указывать с точностью до минут. Если указано с точностью до минут, то ДОЛЖНА быть указанная временная зона. МОЖНО уточнить время до секунд.
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.effectiveTime_value#201812200705+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen##T#R#1..*#R [1..*] информация об образце исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.id##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.id_extension#0987654321#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity_classCode#ENT#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity_determinerCode#INSTANCE#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_code#108#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_codeSystem#1.2.643.5.1.13.13.11.1081#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_codeSystemVersion#2.4#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_codeSystemName#Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_displayName#Кровь венозная#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity_value#6.5#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity_unit#ml#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_value#6.5#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_displayName#мл#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_code#16#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_codeSystem#1.2.643.5.1.13.13.11.1358#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_codeSystemVersion#3.2#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_codeSystemName#Единицы измерения#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.desc##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen##T#R#1..*#R [1..*] информация об образце исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.id##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.id_extension#1234567890#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity_classCode#ENT#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity_determinerCode#INSTANCE#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_code#108#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_codeSystem#1.2.643.5.1.13.13.11.1081#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_codeSystemVersion#2.4#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_codeSystemName#Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.code_displayName#Кровь венозная#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity_value#5#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity_unit#ml#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_value#5#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_displayName#мл#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_code#16#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_codeSystem#1.2.643.5.1.13.13.11.1358#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_codeSystemVersion#3.2#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_codeSystemName#Единицы измерения#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.specimen.specimenRole.specimenPlayingEntity.desc##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer##T#R#1..*#[1..*] Если известны сотрудники производившие забор материала для исследования, их следует указать
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity##T#R#1..1#R [1..1] Сведения о человеке, осуществлявшем забор материала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор назначенного лица в МИС ДОЛЖЕН быть заполнен синтаксически корректным OID (должен соответствовать регулярному выражению ([0-2])(.([1-9][0-9]*|0))+). ДОЛЖЕН быть сформирован по правилу: «OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.70»
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.id_extension#542170#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.id##T#R#1..1#[1..1] СНИЛС
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.id_root#1.2.643.100.3#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.id_extension#10003000607#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.code##T#R#1..1#R [1..1] Код должности Набор значений, OID:нет Справочник, OID:1.2.643.5.1.13.13.11.1002 "Должности работников организаций медицинского и фармацевтического профиля"
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.code_code#171#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.code_codeSystem#1.2.643.5.1.13.13.11.1002#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.code_codeSystemVersion#7.5#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.code_codeSystemName#Должности медицинских и фармацевтических работников#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.code_displayName#медицинская сестра процедурной#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr##T#R#0..1#[0..1] Адрес лица, осуществлявшего забор материала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.stateCode_code#77#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.telecom##T#R#0..1#[0..1] Контакты исполнителя (телефон)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.telecom_value#tel:+79065184597#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.assignedPerson##T#R#1..1#R [1..1] Назначенное лицо (человек)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.assignedPerson.name##T#R#1..1#R [1..1] Фамилия, Имя, Отчество лица, осуществлявщего забор/подготовка материала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.assignedPerson.name.family##T#R#1..1#R [1..1] Фамилия
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.assignedPerson.name.given##T#R#1..1#R [1..1] Имя
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.assignedPerson.name.Patronymic##T#R#0..1#[0..1] Отчество
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.assignedPerson.name.Patronymic_xsi:type#ST#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization##T#R#0..1#[0..1] Организация, в которой проводился забор/подготовка материала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.id##T#R#1..1#R [1..1] Идентификатор организации, в которой проводился забор/подготовка материала организации - по справочнику «Реестр медицинских организаций Российской Федерации» (OID: 1.2.643.5.1.13.13.11.1461)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.id_root#1.2.643.5.1.13.13.12.2.77.7809#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.name##T#R#1..1#R [1..1] Наименование организации, в которой проводился проводился забор/подготовка материала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.telecom##T#R#1..1#[1..1] Контакты организации, в которой проводился забор/подготовка материала [1]
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.telecom_value#tel:+74954342491#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.telecom##T#R#0..*#[0..*] Контакты организации(телефон) [2]
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.telecom_value#tel:+74954342570#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr##T#R#1..1#R [1..1] Адрес направившего учреждения
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.streetAddressLine##T#R#1..1#R [1..1] Адрес текстом
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.stateCode##T#R#1..1#R [1..1] Субъект РФ (Код ФНС по справочнику "Субъекты Российской Федерации" (OID:1.2.643.5.1.13.13.99.2.206))
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.stateCode_xsi:type#CD#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.stateCode_code#77#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.stateCode_codeSystem#1.2.643.5.1.13.13.99.2.206#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.stateCode_codeSystemVersion#6.3#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.stateCode_codeSystemName#Субъекты Российской Федерации#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.stateCode_displayName#г. Москва#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.postalCode##T#R#1..1#[1..1] Почтовый индекс
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.Address##T#R#1..1#[1..1] Кодирование адреса по ФИАС
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.Address.AOGUID##T#R#1..1#R [1..1] Глобальный уникальный идентификатор адресного объекта
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.performer.assignedEntity.representedOrganization.addr.Address.HOUSEGUID##T#R#1..1#[1..1] Глобальный уникальный идентификатор дома
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship##T#R#0..*#[0..*] Описание образца, полученного в ходе обработки материала.
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship_typeCode#REFR#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure##T#R#1..1#R [1..1] Данные о проведенной процедуре
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure_classCode#PROC#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.code##T#R#1..1#R [1..1] Набор значений, Справочник, OID:1.2.643.5.1.13.13.11.1070 «Номенклатура медицинских услуг»
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.code_codeSystem#1.2.643.5.1.13.13.11.1070#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.code_codeSystemName#Номенклатура медицинских услуг#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.code_nullFlavor#OTH#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.code.originalText##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.statusCode##T#R#1..1#R [1..1] Статус выполнения исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.effectiveTime##T#R#1..1#R [1..1] Время обработки материала. Если материал обработывался некоторый интервал времени, то этот интервал указывается явным образом ДОЛЖНО быть указано с точностью до дня, СЛЕДУЕТ указывать с точностью до минут. Если указано с точностью до минут, то ДОЛЖНА быть указанная временная зона. МОЖНО уточнить время до секунд.
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.effectiveTime.low##T#R#1..1#R [1..1] Время начала обработки материала.
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.effectiveTime.low_value#201812201005+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.effectiveTime.high##T#R#1..1#R [1..1] Время окончания обработки материала.
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.effectiveTime.high_value#201812201015+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen##T#R#1..1#R [1..1] информация об образце исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.id##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.66#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.id_extension#124562156#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity_classCode#ENT#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity_determinerCode#INSTANCE#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.code##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.code_code#330#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.code_codeSystem#1.2.643.5.1.13.13.11.1081#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.code_codeSystemVersion#2.4#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.code_codeSystemName#Федеральный справочник лабораторных исследований. Справочник лабораторных материалов и образцов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.code_displayName#Мазок периферической крови#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity_value#3#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity_unit#U#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_value#3#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_displayName#Единица#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_code#128#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_codeSystem#1.2.643.5.1.13.13.11.1358#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_codeSystemVersion#3.2#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.quantity.translation_codeSystemName#Единицы измерения#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.specimen.specimenRole.specimenPlayingEntity.desc##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.performer##T#R#1..*#[1..*] Если известны сотрудники производившие обработку материала для исследования, их следует указать
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.performer.assignedEntity##T#R#1..1#R [1..1] Сведения о человеке, осуществлявшем обработку материала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор назначенного лица в МИС ДОЛЖЕН быть заполнен синтаксически корректным OID (должен соответствовать регулярному выражению ([0-2])(.([1-9][0-9]*|0))+). ДОЛЖЕН быть сформирован по правилу: «OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.70» ссылка на фельдшера-лаборанта Добролюбову из раздела ИСПОЛНИТЕЛИ заголовка
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.procedure.entryRelationship.procedure.performer.assignedEntity.id_extension#542323#A
+ClinicalDocument.component.structuredBody.component##T#R#1..1#R [1..1] СЕКЦИЯ: Информация об использованном оборудовании и расходных материалах (Оборудование и расходные материалы)
+ClinicalDocument.component.structuredBody.component.section##T#
+ClinicalDocument.component.structuredBody.component.section.code##T#R#1..1#R [1..1] Информация о коде секции и кодификаторе
+ClinicalDocument.component.structuredBody.component.section.code_code#ANALYSERS#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystem#1.2.643.5.1.13.13.99.2.197#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystemVersion#1.19#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystemName#Секции электронных медицинских документов#A
+ClinicalDocument.component.structuredBody.component.section.code_displayName#Информация об использованном оборудовании и расходных материалах#A
+ClinicalDocument.component.structuredBody.component.section.title##T#R#1..1#R [1..1] Заголовок секции
+ClinicalDocument.component.structuredBody.component.section.text##T#R#1..1#R [1..1] Текстовая информация об исследованных материалах
+ClinicalDocument.component.structuredBody.component.section.entry##T#R#1..1#R [1..1]  Формализованное перечисление использованного оборудования и расходных материалов
+ClinicalDocument.component.structuredBody.component.section.entry.organizer##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer_classCode#CLUSTER#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.statusCode##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant##T##1..*#[1..*]  Устройства: анализаторы и прочее оборудование: typeCode="DEV"
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant_typeCode#DEV#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole_classCode#ROL#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.id##T##1..1#[1..1] ID из cправочника оборудования ЛИС, потом на него можно будет ссылаться в секции с результатами
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.67#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.id_extension#1234#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.playingDevice##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.playingDevice.manufacturerModelName##T#R#1..1#R [1..1] Наименование из cправочника оборудования ЛИС
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant##T##1..*#[1..*]  Расходные материалы: наборы для определения, тест полоски, катриджи и т.п. : typeCode="CSM"
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant_typeCode#CSM#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole_classCode#ROL#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.id##T##1..1#[1..1] ID из cправочника оборудования ЛИС, потом на него можно будет ссылаться в секции с результатами
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.67#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.id_extension#9874#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.playingDevice##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.participant.participantRole.playingDevice.manufacturerModelName##T#R#1..1#R [1..1] Наименование из cправочника оборудования ЛИС
+ClinicalDocument.component.structuredBody.component##T#R#1..1#R [1..1] СЕКЦИЯ: Результаты лабораторных исследований (Результаты проведенных исследований)
+ClinicalDocument.component.structuredBody.component.section##T#
+ClinicalDocument.component.structuredBody.component.section.code##T#R#1..1#R [1..1] код секции
+ClinicalDocument.component.structuredBody.component.section.code_code#RESLAB#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystem#1.2.643.5.1.13.13.99.2.197#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystemVersion#1.19#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystemName#Секции электронных медицинских документов#A
+ClinicalDocument.component.structuredBody.component.section.code_displayName#Результаты лабораторных исследований#A
+ClinicalDocument.component.structuredBody.component.section.title##T#R#1..1#R [1..1] заголовок секции
+ClinicalDocument.component.structuredBody.component.section.text##T#R#1..1#R [1..1] наполнение секции
+ClinicalDocument.component.structuredBody.component.section.entry##T#R#1..1#R [1..1]
+ClinicalDocument.component.structuredBody.component.section.entry.organizer##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer_classCode#CLUSTER#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.statusCode##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component##T#R#1..*#R [1..*] Кодирование лабораторного исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer_classCode#BATTERY#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.code##T#R#1..1#R [1..1] Указание произвольной группировки исследований
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.code.originalText##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.statusCode##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component##T#R#1..*#R [1..*] Кодирование лабораторного параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_classCode#OBS#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code##T#R#1..1#R [1..1] Лабораторный показатель: гемоглобин, в количественной шкале
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_code#1017128#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystem#1.2.643.5.1.13.13.11.1080#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemVersion#3.28#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemName#Федеральный справочник лабораторных исследований. Справочник лабораторных тестов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_displayName#Гемоглобин общий, массовая концентрация в крови#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode##T#R#1..1#R [1..1] Кодирование статуса исследования параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.effectiveTime##T#R#1..1#R [1..1]  Время выполнения лабораторного исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.effectiveTime_value#201812200855+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value##T#R#1..1#[1..1] Кодирование результата
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_xsi:type#PQ#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_value#166#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_unit#g/l#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value.translation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value.translation_value#166#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value.translation_displayName#г/л#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value.translation_code#60#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value.translation_codeSystem#1.2.643.5.1.13.13.11.1358#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value.translation_codeSystemVersion#3.2#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value.translation_codeSystemName#Единицы измерения#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode##T#R#1..1#[1..1] Код интерпретации результата - выше нормы (поле указывается по справочнику кодов интерпретации результатов" (идентификатор справочника "1.2.643.5.1.13.13.99.2.257"))
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode_code#H#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen##T#R#1..1#R [1..1] Кодирование материала исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id##T#R#1..1#R [1..1] Идентификатор материала исследования - ссылка на секцию SPECIMENS ссылка на Пробирку для гематологических исследований с K3-ЭДТА. Штрихкод: 1234567890
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.66#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_extension#1234567890#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer##T#R#1..*#R [1..*] исполнитель (роль)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор исполнителя - ссылка на раздел doсumentationOf заголовка ссылка на врача КЛД Смирнову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_extension#542177#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer##T#R#1..*#R [1..*] исполнитель (роль)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор исполнителя - ссылка на раздел doсumentationOf заголовка ссылка на фельдшера-лаборанта Добролюбову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_extension#542323#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant##T#R#1..*#[1..*] Информация об использованном оборудовании и расходных материалах
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant_typeCode#DEV#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole_classCode#ROL#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole.id##T###использованный анализатор - ссылка на секцию ANALYSERS Гематологический анализатор Sysmex KX21
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.67#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole.id_extension#1234#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange##T#R#0..1#[0..1] Кодирование комментария к лабораторному параметру -отсутствует [0..1] Кодирование референтного интервала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.text##T#R#1..1#R [1..1] Описание референтного интервала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value##T#R#1..1#[1..1] Референтный интервал
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value_xsi:type#IVL_PQ#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low_value#120#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low_unit#g/l#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_value#120#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_displayName#г/л#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_code#60#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_codeSystem#1.2.643.5.1.13.13.11.1358#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_codeSystemVersion#3.2#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_codeSystemName#Единицы измерения#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high_value#150#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high_unit#g/l#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_value#150#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_displayName#г/л#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_code#60#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_codeSystem#1.2.643.5.1.13.13.11.1358#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_codeSystemVersion#3.2#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_codeSystemName#Единицы измерения#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.interpretationCode##T#R#1..1#R [1..1] Код типа референтного интервала - нормальный
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.interpretationCode_code#N#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component##T#R#1..*#R [1..*] Кодирование лабораторного параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_classCode#OBS#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code##T#R#1..1#R [1..1] Лабораторный показатель: шизоциты, в порядковой шкале без общеупотребимого справочника результатов
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_code#1017482#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystem#1.2.643.5.1.13.13.11.1080#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemVersion#3.28#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemName#Федеральный справочник лабораторных исследований. Справочник лабораторных тестов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_displayName#Шизоциты, обнаружение в крови методом автоматизированного подсчёта#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode##T#R#1..1#R [1..1] Кодирование статуса исследования параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.effectiveTime##T#R#1..1#R [1..1]  Время выполнения лабораторного исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.effectiveTime_value#201812200855+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value##T#R#1..1#[1..1] Кодирование результата
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_xsi:type#ST#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode##T#R#1..1#[1..1] Код интерпретации результата - патологический
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode_code#A#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen##T#R#1..*#R [1..*] Кодирование материала исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id##T#R#1..1#R [1..1] Идентификатор материала исследования - ссылка на секцию SPECIMENS ссылка на Пробирку для гематологических исследований с K3-ЭДТА. Штрихкод: 1234567890
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_extension#1234567890#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer##T#R#1..*#R [1..*] исполнитель (роль)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор исполнителя - ссылка на раздел doсumentationOf заголовка ссылка на врача КЛД Смирнову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_extension#542177#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer##T#R#1..*#R [1..*] исполнитель (роль)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор исполнителя - ссылка на раздел doсumentationOf заголовка ссылка на фельдшера-лаборанта Добролюбову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_extension#542323#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant##T#R#0..*#[0..*] Информация об использованном оборудовании и расходных материалах
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant_typeCode#DEV#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole_classCode#ROL#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole.id##T###использованный анализатор - ссылка на секцию ANALYSERS Гематологический анализатор Sysmex KX21
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.67#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole.id_extension#1234#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship##T#R#0..1#[0..1] Кодирование комментария к лабораторному параметру
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship_typeCode#COMP#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act_classCode#ACT#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.code##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.code_code#10000#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.code_codeSystem#1.2.643.5.1.13.13.99.2.166#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.code_codeSystemVersion#1.75#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.code_codeSystemName#Кодируемые поля CDA документов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.code_displayName#Комментарий#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.text##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.author##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.author.time##T#R#1..1#R [1..1] Дата установки комментария
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.author.time_value#201812201613+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.author.assignedAuthor##T#R#1..1#R [1..1] Автор комментария
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.author.assignedAuthor.id##T#R#1..1#R [1..1] Уникальный идентификатор автора комментария  - ссылка на раздел doсumentationOf заголовка по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.70 extension = идентификатор персонала ссылка на врача КЛД Смирнову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.author.assignedAuthor.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.entryRelationship.act.author.assignedAuthor.id_extension#542177#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange##T#R#0..1#[0..1] Кодирование референтного интервала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.text##T#R#1..1#R [1..1] Описание референтного интервала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value##T#R#1..1#[1..1] Референтный интервал - числовой в данном случае не применим
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value_xsi:type#IVL_PQ#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value_nullFlavor#NA#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.interpretationCode##T#R#1..1#R [1..1] Код типа референтного интервала - нормальный
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.interpretationCode_code#N#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component##T#R#0..1#[0..1] Примечание к результату исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act_classCode#ACT#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.code##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.code_code#900#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.code_codeSystem#1.2.643.5.1.13.13.99.2.166#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.code_codeSystemVersion#1.75#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.code_codeSystemName#Кодируемые поля CDA документов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.code_displayName#Текстовое примечание к лабораторному исследованию#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.text##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.author##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.author.time##T#R#1..1#R [1..1] Дата установки примечания
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.author.time_value#201812200913+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.author.assignedAuthor##T#R#1..1#R [1..1] Автор примечания
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.author.assignedAuthor.id##T#R#1..1#R [1..1] Уникальный идентификатор автора примечания  - ссылка на раздел doсumentationOf заголовка по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.70 extension = идентификатор персонала ссылка на врача КЛД Смирнову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.author.assignedAuthor.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.act.author.assignedAuthor.id_extension#542177#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component##T#R#1..*#R [1..*] Кодирование лабораторного исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer_classCode#BATTERY#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.code##T#R#1..1#R [1..1] Указание произвольной группировки исследований
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.code.originalText##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.statusCode##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component##T#R#1..*#R [1..*] Кодирование лабораторного параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_classCode#OBS#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code##T#R#1..1#R [1..1] Лабораторный показатель: шизоциты, в нестандартной количественной шкале
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_code#1017508#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystem#1.2.643.5.1.13.13.11.1080#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemVersion#3.28#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemName#Федеральный справочник лабораторных исследований. Справочник лабораторных тестов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_displayName#Шизоциты, количество в поле зрения в крови методом световой микроскопии#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode##T#R#1..1#R [1..1] Кодирование статуса исследования параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.effectiveTime##T#R#1..1#R [1..1]  Время выполнения лабораторного исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.effectiveTime_value#201812201042+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value##T#R#1..1#[1..1] Кодирование результата в статистической оценке: минимум - мода/медиана - макисмум
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_xsi:type#ST#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode##T#R#1..1#[1..1] Код интерпретации результата - значительно выше нормы
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode_code#HU#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen##T#R#1..1#R [1..1] Кодирование материала исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id##T#R#1..1#R [1..1] Идентификатор материала исследования - ссылка на секцию SPECIMENS ссылка на Микропрепараты окрашенные азур-эозином
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.66#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_extension#124562156#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer##T#R#1..*#R [1..*] исполнитель (роль)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор исполнителя - ссылка на раздел doсumentationOf заголовка ссылка на врача КЛД Смирнову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_extension#542177#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant##T#R#1..*#[1..*] Информация об использованном оборудовании и расходных материалах - модель микроскопа ЛИС неизвестена
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant_typeCode#DEV#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole_nullFlavor#NASK#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange##T#R#0..1#[0..1] Кодирование комментария к лабораторному параметру - отсутствует [0..1] Кодирование референтного интервала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.text##T#R#1..1#R [1..1] Описание референтного интервала
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value##T#R#1..1#[1..1] Референтный интервал
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value_xsi:type#IVL_PQ#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low_value#1#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low_unit#[LPF]#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_value#1#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_displayName#1/поле зр.#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_code#334#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_codeSystem#1.2.643.5.1.13.13.11.1358#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_codeSystemVersion#3.2#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.low.translation_codeSystemName#Единицы измерения#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high_value#3#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high_unit#[LPF]#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_value#3#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_displayName#1/поле зр.#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_code#334#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_codeSystem#1.2.643.5.1.13.13.11.1358#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_codeSystemVersion#3.2#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.value.high.translation_codeSystemName#Единицы измерения#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.interpretationCode##T#R#1..1#R [1..1] Код типа референтного интервала - нормальный
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.referenceRange.observationRange.interpretationCode_code#N#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component##T#R#1..*#R [1..*] Кодирование лабораторного параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_classCode#OBS#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code##T#R#1..1#R [1..1] Лабораторный показатель: шизоциты, в порядковой шкале без общеупотребимого справочника результатов
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_code#1018738#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystem#1.2.643.5.1.13.13.11.1080#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemVersion#3.28#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemName#Федеральный справочник лабораторных исследований. Справочник лабораторных тестов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_displayName#Гиперхромия, обнаружение в крови методом световой микроскопии#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode##T#R#1..1#R [1..1] Кодирование статуса исследования параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.effectiveTime##T#R#1..1#R [1..1]  Время выполнения лабораторного исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.effectiveTime_value#201812201042+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value##T#R#1..1#[1..1] Кодирование результата
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_xsi:type#ST#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode##T#R#1..1#[1..1] Код интерпретации результата - отсутствует
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode_nullFlavor#NI#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen##T#R#1..1#R [1..1] Кодирование материала исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id##T#R#1..1#R [1..1] Идентификатор материала исследования - ссылка на секцию SPECIMENS ссылка на Микропрепараты окрашенные азур-эозином
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.66#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_extension#124562156#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer##T#R#1..*#R [1..*] исполнитель (роль)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор исполнителя - ссылка на раздел doсumentationOf заголовка ссылка на врача КЛД Смирнову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_extension#542177#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant##T#R#1..*#[1..*] Информация об использованном оборудовании и расходных материалах - модель микроскопа ЛИС неизвестена
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant_typeCode#DEV#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole##T##1..1#[1..1] Экземпляр оборудования - но модель микроскопа ЛИС неизвестена
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole_nullFlavor#NASK#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component##T#R#0..1#[0..1] Примечание к результату исследования - отсутствует [0..1] Прикрепленные данные по исследованию, например, микрофотографии или графики
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia_classCode#OBS#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.value##T###данные упакованы в BASE64
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.value_representation#B64#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.author##T#R#1..1#R [1..1] Автор вложения
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.author.time##T#R#1..1#R [1..1] Дата создания вложения
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.author.time_value#201812201601+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.author.assignedAuthor##T#R#1..1#R [1..1] Автор вложения
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.author.assignedAuthor.id##T#R#1..1#R [1..1] Уникальный идентификатор автора примечания  - ссылка на раздел doсumentationOf заголовка по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.70 extension = идентификатор персонала ссылка на врача КЛД Смирнову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.author.assignedAuthor.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.author.assignedAuthor.id_extension#542177#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.participant##T#R#1..*#[1..*] Информация об использованном оборудовании и расходных материалах
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.participant_typeCode#DEV#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.participant.participantRole##T##1..1#[1..1] Экземпляр оборудования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.participant.participantRole_classCode#ROL#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.participant.participantRole.id##T#R#1..1#R [1..1] использованный анализатор - ссылка на секцию ANALYSERS Гематологический анализатор Sysmex KX21
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.participant.participantRole.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.67#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observationMedia.participant.participantRole.id_extension#1234#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component##T#R#1..*#R [1..*] Кодирование лабораторного исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer_classCode#BATTERY#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.code##T#R#1..1#R [1..1] Указание произвольной группировки исследований
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.code.originalText##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.statusCode##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.effectiveTime##T#R#1..1#R [1..1]  Время выполнения лабораторного исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.effectiveTime_value#201812201155+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component##T#R#1..*#R [1..*] Кодирование лабораторного параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_classCode#OBS#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code##T#R#1..1#R [1..1] Лабораторный параметр: группа крови АВ0, качественный показатель с кодированием результатов по федеральному справочнику
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_code#1038629#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystem#1.2.643.5.1.13.13.11.1080#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemVersion#3.28#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_codeSystemName#Федеральный справочник лабораторных исследований. Справочник лабораторных тестов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.code_displayName#Группа крови AB0 подтверждающим методом#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode##T#R#1..1#R [1..1] Кодирование статуса исследования параметра
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.statusCode_code#completed#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value##T#R#1..1#[1..1] Кодирование результата
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_xsi:type#CD#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_code#103#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_codeSystem#1.2.643.5.1.13.13.11.1061#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_codeSystemVersion#2.1#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_codeSystemName#Группы крови для учета сигнальной информации о пациенте#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.value_displayName#B(III) без уточнения подгруппы#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode##T#R#1..1#[1..1] Код интерпретации результата
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.interpretationCode_nullFlavor#NA#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen##T#R#1..1#R [1..1] Кодирование материала исследования
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id##T#R#1..1#R [1..1] Идентификатор материала исследования Пробирка для иммуногематологических исследований с ACD. Штрихкод: 0987654321
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.66#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.specimen.specimenRole.id_extension#0987654321#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer##T#R#1..*#R [1..*] исполнитель (роль)
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id##T#R#1..1#R [1..1] Уникальный идентификатор исполнителя - ссылка на раздел doсumentationOf заголовка ссылка на врача КЛД Смирнову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.performer.assignedEntity.id_extension#542177#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant##T#R#1..*#[1..*] Информация об использованном оборудовании и расходных материалах
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant_typeCode#CSM#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole##T###для реактивов CSM
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole_classCode#ROL#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole.id##T###использованные расходные материалы - ссылка на секцию ANALYSERS Гелевые карты для иммуногематологических исследований HEMOS SP
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole.id_root#1.2.643.5.1.13.13.12.2.77.7809.100.1.1.67#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.organizer.component.observation.participant.participantRole.id_extension#9874#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component##T#R#0..1#[0..1] Кодирование общего заключения по проведенным исследованиям
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act_classCode#ACT#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.code##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.code_code#901#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.code_codeSystem#1.2.643.5.1.13.13.99.2.166#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.code_codeSystemVersion#1.75#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.code_codeSystemName#Кодируемые поля CDA документов#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.code_displayName#Текстовое заключение по проведенным лабораторным исследованиям#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.text##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.author##T#
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.author.time##T#R#1..1#R [1..1] Дата установки примечания
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.author.time_value#201812201613+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.author.assignedAuthor##T#R#1..1#R [1..1] Автор примечания
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.author.assignedAuthor.id##T#R#1..1#R [1..1] Уникальный идентификатор автора примечания  - ссылка на раздел doсumentationOf заголовка по правилу: root = OID_медицинской_организации.100.НомерМИС.НомерЭкзМИС.70 extension = идентификатор персонала ссылка на врача КЛД Смирнову
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.author.assignedAuthor.id_root#1.2.643.5.1.13.13.12.2.77.8312.100.1.1.70#A
+ClinicalDocument.component.structuredBody.component.section.entry.organizer.component.act.author.assignedAuthor.id_extension#542177#A
+ClinicalDocument.component.structuredBody.component##T#R#0..1#[0..1] СЕКЦИЯ: Оказанные услуги
+ClinicalDocument.component.structuredBody.component.section##T#
+ClinicalDocument.component.structuredBody.component.section.code##T#R#1..1#R [1..1] код секции
+ClinicalDocument.component.structuredBody.component.section.code_code#SERVICES#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystem#1.2.643.5.1.13.13.99.2.197#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystemVersion#1.19#A
+ClinicalDocument.component.structuredBody.component.section.code_codeSystemName#Секции электронных медицинских документов#A
+ClinicalDocument.component.structuredBody.component.section.code_displayName#Оказанные услуги#A
+ClinicalDocument.component.structuredBody.component.section.title##T#R#1..1#R [1..1] заголовок секции
+ClinicalDocument.component.structuredBody.component.section.text##T#R#1..1#R [1..1] наполнение секции
+ClinicalDocument.component.structuredBody.component.section.entry##T#R#1..*#R [1..*] Кодирование медицинской услуги
+ClinicalDocument.component.structuredBody.component.section.entry.act##T#
+ClinicalDocument.component.structuredBody.component.section.entry.act_classCode#ACT#A
+ClinicalDocument.component.structuredBody.component.section.entry.act_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code##T#R#1..1#R [1..1] Оказанная услуга
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_code#B03.016.002#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_displayName#Общий (клинический) анализ крови#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_codeSystem#1.2.643.5.1.13.13.11.1070#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_codeSystemVersion#2.10#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_codeSystemName#Номенклатура медицинских услуг#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.effectiveTime##T#R#1..1#R [1..1] Дата и время оказания услуги
+ClinicalDocument.component.structuredBody.component.section.entry.act.effectiveTime_value#201812201111+0300#A
+ClinicalDocument.component.structuredBody.component.section.entry##T#R#1..*#R [1..*] Кодирование медицинской услуги
+ClinicalDocument.component.structuredBody.component.section.entry.act##T#
+ClinicalDocument.component.structuredBody.component.section.entry.act_classCode#ACT#A
+ClinicalDocument.component.structuredBody.component.section.entry.act_moodCode#EVN#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code##T#R#1..1#R [1..1] Оказанная услуга
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_code#A12.05.005#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_displayName#Определение основных групп по системе AB0#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_codeSystem#1.2.643.5.1.13.13.11.1070#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_codeSystemVersion#2.10#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.code_codeSystemName#Номенклатура медицинских услуг#A
+ClinicalDocument.component.structuredBody.component.section.entry.act.effectiveTime##T#R#1..1#R [1..1] Дата и время оказания услуги
+ClinicalDocument.component.structuredBody.component.section.entry.act.effectiveTime_value#201812201212+0300#A
