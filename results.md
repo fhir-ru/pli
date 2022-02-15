@@ -46,9 +46,9 @@
 
 Текущие требования оформлены в обсуждениях:
 
-[Пациент](https://github.com/fhir-ru/core/discussions/76)
-[Сотрудник](https://github.com/fhir-ru/core/discussions/77)
-[Организация](https://github.com/fhir-ru/core/discussions/75)
+* [Пациент](https://github.com/fhir-ru/core/discussions/76)
+* [Сотрудник](https://github.com/fhir-ru/core/discussions/77)
+* [Организация](https://github.com/fhir-ru/core/discussions/75)
 
 ### Пример заполнения ПЛИ
 
